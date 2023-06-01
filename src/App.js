@@ -1,7 +1,12 @@
+import React from 'react';
+import Header from './components/header';
+import HomePage from './components/homepage';
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-black">Emon</h1>
+    <div>
+      <Header title='Portfolio' />
+      <HomePage />
     </div>
   );
 }
