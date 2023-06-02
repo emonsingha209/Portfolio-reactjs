@@ -1,14 +1,15 @@
 import React from 'react';
 import Intro from './intro';
+import About from './about';
 
 function HomePage() {
   return (
-    <div className='h-screen bg-fullBg text-white'>
+    <div className='h-screen bg-white text-pen'>
       <div className='h-full'>
         <Intro />
       </div>
       <div className='h-full bg-inherit'>
-        <Intro />
+        <About />
       </div>
     </div>
   );

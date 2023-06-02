@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'navColor': '#4949a7',
         'fullBg' : '#1b1b32',
+        'pen': '#1c1e21',
       },
     },
   },
