@@ -6,7 +6,7 @@ function Header(props) {
   return (
     <div>
       <title>{props.title}</title>
-      <div className='fixed top-0 left-0 right-0 w-screen h-16 bg-gray-800 text-white px-6 py-4 flex justify-between'>
+      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gradient-to-r from-gray-900 to-gray-950 text-white p-4 flex justify-between'>
         <div className='font-extrabold text-2xl cursor-pointer'>
           <Link to='#intro' smooth={true} duration={500}>
             <div className='flex gap-2'>
@@ -15,10 +15,10 @@ function Header(props) {
             </div>
           </Link>
         </div>
-        <div>
+        <div className='hidden md:flex'>
           <NavBar />
         </div>
-        <div className='md:hidden flex'>
+        <div className='flex md:hidden'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             className='h-8 w-8'

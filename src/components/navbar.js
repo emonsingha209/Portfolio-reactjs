@@ -8,22 +8,28 @@ function NavBar() {
   };
   return (
     <nav>
-      <ui>
-        <div className='md:flex text-xl gap-8 px-10 hidden cursor-pointer'>
+      <ul className='md:flex text-xl gap-8 mr-4 cursor-pointer font-poppins'>
+        <li>
           <Link to='#intro' {...scroll}>
             Home
           </Link>
+        </li>
+        <li>
           <Link to='#about' {...scroll}>
             About
           </Link>
+        </li>
+        <li>
           <Link to='#projects' {...scroll}>
             Projects
           </Link>
+        </li>
+        <li>
           <Link to='#Contact' {...scroll}>
             Contact
           </Link>
-        </div>
-      </ui>
+        </li>
+      </ul>
     </nav>
   );
 }

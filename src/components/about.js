@@ -4,29 +4,30 @@ function About() {
   return (
     <div
       id='#about'
-      className='flex flex-col md:flex-row items-center justify-center h-screen pt-20 md:pt-3'
+      className='grid grid-cols-1 md:grid-cols-3 h-screen mx-0 md:mx-4 font-poppins'
     >
-      <div className='bg-green-600 text-5xl p-4 rounded-s-2xl'>
-        <h1>About me</h1>
+      <div className='flex flex-col col-span-2 items-center justify-center text-base md:text-2xl gap-4 p-4 mt-16'>
+        <div className='text-2xl md:text-5xl font-bold'>
+          <h1 className='text-yellow-500'>About me</h1>
+        </div>
+        <div>
+          <p>
+            Hi, I'm Emon Singha, a web developer with expertise in HTML, CSS,
+            JavaScript, TypeScript, and PHP. I have extensive experience working with raw
+            PHP, allowing me to develop applications from scratch and handle
+            server-side logic efficiently. Additionally, I'm proficient in
+            frameworks such as ReactJS, NextJs, and NestJs, which enable me to
+            build dynamic and scalable web applications. I'm passionate about
+            web development and eager to collaborate on new projects. Thank you
+            for visiting my portfolio website!
+          </p>
+        </div>
       </div>
-      <div className='w-4/5 text-2xl max-h-full bg-sky-800 rounded p-4 overflow-y-clip text-white'>
-        <p>
-          Hi there! My name is Emon Singha, and I'm a web developer currently in
-          my final year at American International University-Bangladesh. I
-          specialize in web development using HTML, CSS, JavaScript, PHP,
-          PostgreSQL, and MySQL, and I have experience working with frameworks
-          such as ReactJS, NextJs, and NestJs.
-        </p>
-        <p>
-          What sets me apart from others in my passion for learning and my
-          dedication to my work. I enjoy talking on new challenges and expanding
-          my knowledge and skills. I'm also proud of work I've done so far,
-          including projects in OpelGL and Web development.
-        </p>
-        <p>
-          Thank you for taking the time to visit my portfolio website, and I
-          look forward to the opportunity to collaborate and create with you.
-        </p>
+      <div className='mt-16'>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>PHP</p>
       </div>
     </div>
   );

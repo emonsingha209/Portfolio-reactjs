@@ -4,11 +4,11 @@ import About from './about';
 
 function HomePage() {
   return (
-    <div className='h-screen bg-white text-pen'>
-      <div className='h-full'>
+    <div className='bg-gradient-to-r from-gray-800 to-gray-900 text-white'>
+      <div>
         <Intro />
       </div>
-      <div className='h-full bg-inherit'>
+      <div>
         <About />
       </div>
     </div>
