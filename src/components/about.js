@@ -34,39 +34,39 @@ function About() {
       </div>
       <div className='grid grid-cols-3 text-center text-2xl font-bold text-yellow-500 m-4 lg:m-0 lg:w-1/3 h-full'>
         <div>
-          <img className='p-4' src={html} alt='html'/>
+          <img className='p-4' src={html} alt='html' />
           <p>HTML</p>
         </div>
         <div>
-          <img className='p-4' src={css} alt='css'/>
+          <img className='p-4' src={css} alt='css' />
           <p>CSS</p>
         </div>
         <div>
-          <img className='p-4' src={php} alt='php'/>
+          <img className='p-4' src={php} alt='php' />
           <p>PHP</p>
         </div>
         <div>
-          <img className='p-4' src={js} alt='js'/>
+          <img className='p-4' src={js} alt='js' />
           <p>JavaScript</p>
         </div>
         <div>
-          <img className='p-4' src={ts} alt='ts'/>
+          <img className='p-4' src={ts} alt='ts' />
           <p>TypeScript</p>
         </div>
         <div>
-          <img className='p-4' src={tailwind} alt='tailwind'/>
+          <img className='p-4' src={tailwind} alt='tailwind' />
           <p>Tailwind CSS</p>
         </div>
         <div>
-          <img className='p-4' src={react} alt='react'/>
+          <img className='p-4' src={react} alt='react' />
           <p>ReactJS</p>
         </div>
         <div>
-          <img className='p-4' src={nextjs} alt='nextjs'/>
+          <img className='p-4' src={nextjs} alt='nextjs' />
           <p>NextJs</p>
         </div>
         <div>
-          <img className='p-4' src={nestjs} alt='nestjs'/>
+          <img className='p-4' src={nestjs} alt='nestjs' />
           <p>NestJs</p>
         </div>
       </div>

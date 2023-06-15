@@ -6,7 +6,7 @@ function Intro() {
   return (
     <div
       id='#intro'
-      className='flex flex-col-reverse md:flex-row items-center justify-center pt-20 lg:pt-16 h-full'
+      className='flex flex-col-reverse md:flex-row items-center justify-center pt-24 lg:pt-16 h-full'
     >
       <div className='flex flex-col items-center text-center m-8 md:text-left lg:m-20 max-w-2xl min-w-fit'>
         <div className='flex flex-col text-2xl'>

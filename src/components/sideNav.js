@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-function NavBar() {
+function sideNav() {
   const scroll = {
     smooth: true,
     duration: 500,
+    offset: -50,
   };
   return (
     <div>
       <nav>
-        <ul className='md:flex text-2xl gap-8 mr-4 font-thin cursor-pointer font-serif'>
+        <ul className='absolute bg-gray-800 right-0 top-16 h-screen text-center flex flex-col gap-8 text-2xl p-8 font-thin cursor-pointer font-serif'>
           <li className='hover:text-yellow-400'>
             <Link to='#intro' {...scroll}>
               Home
@@ -36,4 +37,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default sideNav;
