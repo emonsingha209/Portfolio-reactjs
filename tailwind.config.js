@@ -7,6 +7,11 @@ module.exports = {
         'navColor': '#4949a7',
         'fullBg' : '#1b1b32',
         'pen': '#1c1e21',
+        'card': '#2196F3',
+      },
+      height: {
+        '128': '43rem',
+        '120': '36rem',
       },
       screens: {
         'mobile': '340px',

@@ -5,7 +5,7 @@ import HomePage from './components/homepage';
 function App() {
   return (
     <div>
-      <Header title='Emon Singha' />
+      <Header />
       <HomePage />
     </div>
   );

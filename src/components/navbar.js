@@ -7,30 +7,32 @@ function NavBar() {
     duration: 500,
   };
   return (
-    <nav>
-      <ul className='md:flex text-xl gap-8 mr-4 cursor-pointer font-poppins'>
-        <li>
+    <div>
+      <nav>
+      <ul className='md:flex text-2xl gap-8 mr-4 font-thin cursor-pointer font-serif'>
+        <li className='hover:text-yellow-400'>
           <Link to='#intro' {...scroll}>
             Home
           </Link>
         </li>
-        <li>
+        <li className='hover:text-yellow-400'>
           <Link to='#about' {...scroll}>
             About
           </Link>
         </li>
-        <li>
+        <li className='hover:text-yellow-400'>
           <Link to='#projects' {...scroll}>
             Projects
           </Link>
         </li>
-        <li>
+        <li className='hover:text-yellow-400'>
           <Link to='#Contact' {...scroll}>
             Contact
           </Link>
         </li>
       </ul>
     </nav>
+    </div>
   );
 }
 

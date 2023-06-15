@@ -2,11 +2,10 @@ import React from 'react';
 import NavBar from './navbar';
 import { Link } from 'react-scroll';
 
-function Header(props) {
+function Header() {
   return (
     <div>
-      <title>{props.title}</title>
-      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gradient-to-r from-gray-900 to-gray-950 text-white p-4 flex justify-between'>
+      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gray-950 text-white p-4 flex justify-between'>
         <div className='font-extrabold text-2xl cursor-pointer'>
           <Link to='#intro' smooth={true} duration={500}>
             <div className='flex gap-2'>
