@@ -9,12 +9,15 @@ module.exports = {
         pen: '#1c1e21',
         card: '#2196F3',
       },
+      width: {
+        '120': '28rem',
+      },
       height: {
-        128: '43rem',
-        120: '36rem',
+        '120': '28rem',
       },
       screens: {
         mobile: '340px',
+        tablet: '600px',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
