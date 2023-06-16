@@ -5,10 +5,10 @@ import About from './about';
 function HomePage() {
   return (
     <div className='bg-gradient-to-r from-gray-800 to-gray-900 text-white'>
-      <div className='h-auto lg:h-screen'>
+      <div className='h-auto xl:h-screen'>
         <Intro />
       </div>
-      <div className='h-auto lg:h-screen'>
+      <div className='h-auto xl:h-screen'>
         <About />
       </div>
     </div>

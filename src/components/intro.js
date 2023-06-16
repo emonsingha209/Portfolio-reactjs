@@ -5,8 +5,8 @@ import cv from '../files/Emon-Singha.pdf';
 function Intro() {
   return (
     <div
-      id='#intro'
-      className='flex flex-col-reverse md:flex-row items-center justify-center pt-24 lg:pt-16 h-full'
+      id='intro'
+      className='flex flex-col-reverse md:flex-row items-center justify-center pt-24 xl:pt-16 h-full'
     >
       <div className='flex flex-col items-center text-center m-8 md:text-left lg:m-20 max-w-2xl min-w-fit'>
         <div className='flex flex-col text-2xl'>
@@ -20,7 +20,15 @@ function Intro() {
             className='bg-lime-500 w-fit p-3 rounded-lg ring-2 ring-lime-500 ring-offset-2 ring-offset-gray-800 
             transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
           >
-            <button>Learn More</button>
+            <button>
+              <a
+                href='https://www.linkedin.com/in/emon-singha209/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Learn More
+              </a>
+            </button>
           </div>
           <div
             className='bg-lime-500 w-fit p-3 rounded-lg ring-2 ring-lime-500 ring-offset-2 ring-offset-gray-800 

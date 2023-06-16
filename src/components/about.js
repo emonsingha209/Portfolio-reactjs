@@ -12,7 +12,7 @@ import nestjs from '../images/nestjs.png';
 function About() {
   return (
     <div
-      id='#about'
+      id='about'
       className='flex flex-col lg:flex-row gap-0 mx-0 md:mx-4 md:pt-20 lg:pb-4 h-full'
     >
       <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 mt-4 lg:w-2/3'>
@@ -62,7 +62,11 @@ function About() {
           <p>ReactJS</p>
         </div>
         <div>
-          <img className='p-4' src={nextjs} alt='nextjs' />
+          <img
+            className='bg-white rounded-full p-4'
+            src={nextjs}
+            alt='nextjs'
+          />
           <p>NextJs</p>
         </div>
         <div>
