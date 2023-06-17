@@ -62,11 +62,13 @@ function About() {
           <p>ReactJS</p>
         </div>
         <div>
-          <img
-            className='bg-white rounded-full p-4'
-            src={nextjs}
-            alt='nextjs'
-          />
+          <div className='p-4'>
+            <img
+              className='bg-white rounded-full p-4'
+              src={nextjs}
+              alt='nextjs'
+            />
+          </div>
           <p>NextJs</p>
         </div>
         <div>
