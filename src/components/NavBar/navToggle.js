@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SideNav from '../components/sideNav';
+import SideNav from './sideNav';
 
 function NavControl() {
   const [opened, setOpened] = useState(false);

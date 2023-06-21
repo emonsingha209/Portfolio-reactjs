@@ -1,6 +1,6 @@
 import React from 'react';
-import Intro from './intro';
-import About from './about';
+import Intro from './Pages/intro';
+import About from './Pages/about';
 
 function HomePage() {
   return (

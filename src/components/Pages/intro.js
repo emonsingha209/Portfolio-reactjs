@@ -1,6 +1,6 @@
 import React from 'react';
-import pic from '../images/emon-singha.jpg';
-import cv from '../files/Emon-Singha.pdf';
+import pic from '../../images/emon-singha.jpg';
+import cv from '../../files/Emon-Singha.pdf';
 
 function Intro() {
   return (

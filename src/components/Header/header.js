@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from './navbar';
-import NavControl from './navControl';
+import NavBar from '../NavBar/navbar';
+import NavControl from '../NavBar/navToggle';
 import { Link } from 'react-scroll';
 
 function Header() {
