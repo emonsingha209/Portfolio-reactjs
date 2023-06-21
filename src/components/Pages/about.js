@@ -32,7 +32,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-3 text-center text-2xl font-bold text-yellow-500 m-4 lg:m-2 lg:w-1/3 h-full'>
+      <div className='grid grid-cols-3 text-center text-base lg:text-2xl font-bold text-yellow-500 m-4 lg:m-2 lg:w-1/3 h-full'>
         <div>
           <div className='p-8 pb-4'>
             <img src={html} alt='html' />
