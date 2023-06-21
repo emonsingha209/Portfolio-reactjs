@@ -17,8 +17,8 @@ function Intro() {
         </div>
         <div className='flex gap-8 md:gap-12 pt-8 text-pen font-medium'>
           <div
-            className='bg-lime-500 w-fit p-3 rounded-lg ring-2 ring-lime-500 ring-offset-2 ring-offset-gray-800 
-            transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
+            className='bg-yellow-400 w-fit p-3 rounded-lg ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 
+            hover:bg-yellow-500 cursor-pointer'
           >
             <button>
               <a
@@ -31,8 +31,8 @@ function Intro() {
             </button>
           </div>
           <div
-            className='bg-lime-500 w-fit p-3 rounded-lg ring-2 ring-lime-500 ring-offset-2 ring-offset-gray-800 
-            transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
+            className='bg-yellow-400 w-fit p-3 rounded-lg ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 
+            hover:bg-yellow-500 cursor-pointer'
           >
             <a href={cv} download>
               Curriculum Vitae

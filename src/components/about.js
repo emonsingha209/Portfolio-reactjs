@@ -46,19 +46,19 @@ function About() {
           <p>PHP</p>
         </div>
         <div>
-          <img className='p-4' src={js} alt='js' />
+          <img className='p-4' src={js} alt='javascript' />
           <p>JavaScript</p>
         </div>
         <div>
-          <img className='p-4' src={ts} alt='ts' />
+          <img className='p-4' src={ts} alt='typescript' />
           <p>TypeScript</p>
         </div>
         <div>
-          <img className='p-4' src={tailwind} alt='tailwind' />
+          <img className='p-4' src={tailwind} alt='tailwind css' />
           <p>Tailwind CSS</p>
         </div>
         <div>
-          <img className='p-4' src={react} alt='react' />
+          <img className='p-4' src={react} alt='reactjs' />
           <p>ReactJS</p>
         </div>
         <div>
