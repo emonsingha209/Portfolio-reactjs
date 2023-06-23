@@ -15,7 +15,15 @@ function ProjectCard(props) {
         </div>
       </div>
       <div className='bg-gray-900 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg'>
-        <button className='p-2'>{props.projectLink}</button>
+        <button className='w-full'>
+          <a
+            href={props.projectLink}
+            target='_blank'
+            rel='noreferrer' className='block w-full h-full p-2'
+          >
+            Source Code
+          </a>
+        </button>
       </div>
     </div>
   );
