@@ -14,7 +14,7 @@ function Intro() {
           <h1 className='text-3xl lg:text-5xl xl:text-6xl'>
             Hi! I am Emon Singha
           </h1>
-          <p className='mt-1 md:mt-4'>Full Stack Developer</p>
+          <p className='mt-3 md:mt-4'>Full Stack Developer</p>
         </div>
         <div className='flex gap-8 md:gap-12 pt-8 text-pen font-medium'>
           <div>
