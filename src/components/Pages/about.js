@@ -20,7 +20,7 @@ function About() {
         <div className='text-3xl md:text-5xl font-bold'>
           <h1 className='text-yellow-500'>ABOUT ME</h1>
         </div>
-        <div className='text-justify font-poppins px-8'>
+        <div className='text-justify tracking-normal font-poppins px-4 md:px-8'>
           <p>
             Hi, I'm Emon Singha, a web developer with expertise in HTML, CSS,
             JavaScript,and PHP. Additionally, I'm proficient in frameworks such
