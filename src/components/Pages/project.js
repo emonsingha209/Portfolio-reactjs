@@ -20,7 +20,7 @@ function Project() {
             updates, and admissions details. The responsive website ensures
             accessibility across devices, making it a user-friendly hub for
             prospective students and current learners.'
-            languages='HTML, CSS, JavaScript, PHP.'
+            languages='HTML, CSS, JavaScript, PHP, MySQL.'
             projectLink='https://github.com/emonsingha209/SHARPENERS'
           />
         </div>
