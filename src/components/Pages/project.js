@@ -21,7 +21,15 @@ function Project() {
             accessibility across devices, making it a user-friendly hub for
             prospective students and current learners.'
             languages='HTML, CSS, JavaScript, PHP.'
-            projectLink='https://github.com/emonsingha209/SHARPENERS'
+            projectLink={
+              <a
+                href='https://github.com/emonsingha209/SHARPENERS'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Source Code
+              </a>
+            }
           />
         </div>
         <div>
@@ -33,7 +41,15 @@ function Project() {
           viewers a captivating glimpse into the beauty of this historical
           landmark."
             languages='OpenGL'
-            projectLink='https://github.com/emonsingha209/London-Tower-Bridge--Opengl'
+            projectLink={
+              <a
+                href='https://github.com/emonsingha209/London-Tower-Bridge--Opengl'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Source Code
+              </a>
+            }
           />
         </div>
       </div>
