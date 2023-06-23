@@ -1,4 +1,5 @@
 import React from 'react';
+import Skill from '../SkillLogo/skill';
 import html from '../../images/html-5.png';
 import css from '../../images/css-3.png';
 import js from '../../images/js.png';
@@ -19,95 +20,46 @@ function About() {
         <div className='text-3xl md:text-5xl font-bold'>
           <h1 className='text-yellow-500'>ABOUT ME</h1>
         </div>
-        <div className='text-center font-poppins'>
+        <div className='text-justify font-poppins px-8'>
           <p>
             Hi, I'm Emon Singha, a web developer with expertise in HTML, CSS,
-            JavaScript,and PHP. Additionally, I'm proficient in
-            frameworks such as ReactJS, NextJs, and NestJs, which enable me to
-            build dynamic and scalable web applications. I'm also experienced in
-            using Tailwind CSS, a utility-first CSS framework, to create
-            responsive and stylish web interfaces efficiently. I'm passionate
-            about web development and eager to collaborate on new projects.
-            Thank you for visiting my portfolio website!
+            JavaScript,and PHP. Additionally, I'm proficient in frameworks such
+            as ReactJS, NextJs, and NestJs, which enable me to build dynamic and
+            scalable web applications. I'm also experienced in using Tailwind
+            CSS, a utility-first CSS framework, to create responsive and stylish
+            web interfaces efficiently. I'm passionate about web development and
+            eager to collaborate on new projects. Thank you for visiting my
+            portfolio website!
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-3 text-center text-base lg:text-2xl font-bold text-yellow-500 m-4 lg:m-2 lg:w-1/3 h-full'>
+      <div className='grid grid-cols-3 text-center text-base md:text-2xl font-bold text-yellow-500 m-4 lg:m-2 lg:w-1/3 h-full'>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={html} alt='html' />
-          </div>
-          <div>
-            <p>HTML</p>
-          </div>
+          <Skill skill='HTML' logo={html} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={css} alt='css' />
-          </div>
-          <div>
-            <p>CSS</p>
-          </div>
+          <Skill skill='CSS' logo={css} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={php} alt='php' />
-          </div>
-          <div>
-            <p>PHP</p>
-          </div>
+          <Skill skill='PHP' logo={php} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={js} alt='javascript' />
-          </div>
-          <div>
-            <p>JavaScript</p>
-          </div>
+          <Skill skill='JavaScript' logo={js} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={ts} alt='typescript' />
-          </div>
-          <div>
-            <p>TypeScript</p>
-          </div>
+          <Skill skill='TypeScript' logo={ts} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={tailwind} alt='tailwind css' />
-          </div>
-          <div>
-            <p>Tailwind CSS</p>
-          </div>
+          <Skill skill='Tailwind CSS' logo={tailwind} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img src={react} alt='reactjs' />
-          </div>
-          <div>
-            <p>ReactJS</p>
-          </div>
+          <Skill skill='ReactJS' logo={react} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img
-              className='bg-white rounded-full p-4'
-              src={nextjs}
-              alt='nextjs'
-            />
-          </div>
-          <div>
-            <p>NextJs</p>
-          </div>
+          <Skill skill='NextJS' logo={nextjs} />
         </div>
         <div>
-          <div className='p-8 pb-4'>
-            <img className='p-4' src={nestjs} alt='nestjs' />
-          </div>
-          <div>
-            <p>NestJs</p>
-          </div>
+          <Skill skill='NestJS' logo={nestjs} />
         </div>
       </div>
     </div>

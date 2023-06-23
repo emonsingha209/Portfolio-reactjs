@@ -1,6 +1,7 @@
 import React from 'react';
 import pic from '../../images/emon-singha.jpg';
 import cv from '../../files/Emon-Singha.pdf';
+import LinkButton from '../Button/linkButton';
 
 function Intro() {
   return (
@@ -16,27 +17,27 @@ function Intro() {
           <p className='mt-1 md:mt-4'>Full Stack Developer</p>
         </div>
         <div className='flex gap-8 md:gap-12 pt-8 text-pen font-medium'>
-          <div
-            className='bg-yellow-400 w-fit p-3 rounded-lg ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 
-            hover:bg-yellow-500 cursor-pointer'
-          >
-            <button>
-              <a
-                href='https://www.linkedin.com/in/emon-singha209/'
-                target='_blank'
-                rel='noreferrer'
-              >
+          <div>
+            <LinkButton
+              Link={
+                <a
+                  href='https://www.linkedin.com/in/emon-singha209/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                 Learn More
-              </a>
-            </button>
+                </a>
+              }
+            />
           </div>
-          <div
-            className='bg-yellow-400 w-fit p-3 rounded-lg ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 
-            hover:bg-yellow-500 cursor-pointer'
-          >
-            <a href={cv} download>
-              Curriculum Vitae
-            </a>
+          <div>
+            <LinkButton
+              Link={
+                <a href={cv} download>
+                  Curriculum Vitae
+                </a>
+              }
+            />
           </div>
         </div>
       </div>

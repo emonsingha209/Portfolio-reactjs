@@ -1,6 +1,7 @@
 import React from 'react';
 import Intro from './Pages/intro';
 import About from './Pages/about';
+import Project from './Pages/project';
 
 function HomePage() {
   return (
@@ -10,6 +11,9 @@ function HomePage() {
       </div>
       <div className='h-auto xl:h-screen'>
         <About />
+      </div>
+      <div className='h-auto xl:h-screen'>
+        <Project />
       </div>
     </div>
   );
