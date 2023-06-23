@@ -19,7 +19,8 @@ function ProjectCard(props) {
           <a
             href={props.projectLink}
             target='_blank'
-            rel='noreferrer' className='block w-full h-full p-2'
+            rel='noreferrer'
+            className='block w-full h-full p-2'
           >
             Source Code
           </a>

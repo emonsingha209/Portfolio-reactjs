@@ -24,6 +24,7 @@ function Intro() {
                   href='https://www.linkedin.com/in/emon-singha209/'
                   target='_blank'
                   rel='noreferrer'
+                  className='block h-full w-full p-3 rounded-lg'
                 >
                   Learn More
                 </a>
@@ -33,7 +34,11 @@ function Intro() {
           <div>
             <LinkButton
               Link={
-                <a href={cv} download>
+                <a
+                  href={cv}
+                  className='block h-full w-full p-3 rounded-lg'
+                  download
+                >
                   Curriculum Vitae
                 </a>
               }

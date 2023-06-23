@@ -3,10 +3,10 @@ function LinkButton(props) {
   return (
     <div>
       <div
-        className='bg-yellow-400 w-fit p-3 rounded-lg ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 
-            hover:bg-green-400 hover:ring-green-400 cursor-pointer'
+        className='bg-yellow-400 w-fit rounded-lg ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 
+            hover:bg-yellow-500 hover:ring-yellow-500'
       >
-        <button>{props.Link}</button>
+        <button className='cursor-pointer'>{props.Link}</button>
       </div>
     </div>
   );
