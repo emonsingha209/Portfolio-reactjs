@@ -10,7 +10,7 @@ function Project() {
       <div className='text-yellow-400 font-bold text-2xl md:text-4xl text-center mb-4'>
         <h2>PROJECTS</h2>
       </div>
-      <div className='grid grid-cols-2 p-4 gap-4 h-full text-justify'>
+      <div className='grid grid-cols-1 md:grid-cols-2 content-stretch p-4 gap-4 h-full'>
         <div>
           <ProjectCard
             title='SHARPENERS Website'
