@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 function Header() {
   return (
     <div>
-      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gray-950 text-white p-4 flex justify-between'>
+      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gray-950 text-white p-4 flex justify-between z-9999'>
         <div className='font-extrabold text-2xl cursor-pointer'>
           <Link to='intro' smooth={true} duration={500}>
             <div className='flex gap-2'>

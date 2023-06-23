@@ -12,7 +12,7 @@ function HomePage() {
       <div className='h-auto xl:h-screen'>
         <About />
       </div>
-      <div className='h-auto xl:h-screen'>
+      <div className='h-auto'>
         <Project />
       </div>
     </div>

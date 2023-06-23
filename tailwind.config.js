@@ -21,6 +21,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        newFont: ['Roboto', 'Arial', 'sans-serif'],
       },
     },
   },

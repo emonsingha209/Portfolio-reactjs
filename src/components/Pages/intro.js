@@ -25,7 +25,7 @@ function Intro() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                Learn More
+                  Learn More
                 </a>
               }
             />
