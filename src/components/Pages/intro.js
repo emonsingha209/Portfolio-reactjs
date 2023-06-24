@@ -15,7 +15,7 @@ function Intro() {
       className='flex flex-col-reverse md:flex-row items-center justify-around pt-24 md:pt-32 xl:pt-16 h-full'
     >
       <div className='grid grid-flow-col md:grid-flow-row w-auto md:w-16 gap-4 p-2'>
-        <div>
+        <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
             href='https://www.linkedin.com/in/emon-singha209/'
             target='_blank'
@@ -24,16 +24,16 @@ function Intro() {
             <img src={linkedin} alt='linkedin' />
           </a>
         </div>
-        <div>
+        <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
             href='https://github.com/emonsingha209'
             target='_blank'
             rel='noreferrer'
           >
-            <img src={github} alt='github' />
+            <img src={github} alt='github' className='rounded-md' />
           </a>
         </div>
-        <div>
+        <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
             href='https://www.facebook.com/thounaojam.emon'
             target='_blank'
@@ -42,7 +42,7 @@ function Intro() {
             <img src={facebook} alt='facebook' />
           </a>
         </div>
-        <div>
+        <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
             href='https://wa.me/+8801743217209'
             target='_blank'
@@ -51,13 +51,13 @@ function Intro() {
             <img src={whatsapp} alt='whatsapp' />
           </a>
         </div>
-        <div>
+        <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
             href='mailto:emonsingha209@gmail.com'
             target='_blank'
             rel='noreferrer'
           >
-            <img src={gmail} alt='gmail' className='bg-gray-200 rounded-lg' />
+            <img src={gmail} alt='gmail' className='bg-gray-200 rounded-md' />
           </a>
         </div>
       </div>
