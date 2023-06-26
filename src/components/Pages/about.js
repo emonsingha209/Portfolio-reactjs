@@ -18,7 +18,7 @@ function About() {
     >
       <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 mt-4 lg:w-2/3'>
         <div className='text-3xl md:text-5xl font-bold'>
-          <h1 className='text-yellow-500'>ABOUT ME</h1>
+          <h1 className='text-yellow-400'>ABOUT ME</h1>
         </div>
         <div className='text-center md:text-justify md:tracking-normal leading-relaxed font-poppins px-0 md:px-8'>
           <p>
