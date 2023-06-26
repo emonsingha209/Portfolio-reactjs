@@ -27,13 +27,13 @@ function Contact() {
       <div className='mt-0 md:mt-16 h-auto w-full'>
         <div className='text-yellow-400 text-center mb-2 md:mb-4'>
             <h3 className='text-3xl md:text-4xl font-bold'>Get in Touch with Me</h3>
-            <p className='text-lg md:text-xl italic text-gray-200'>Use the form below to send me a message or ask any questions</p>
+            <p className='text-lg md:text-xl px-2 italic text-gray-200'>Use the form below to send me a message or ask any questions</p>
         </div>
         <div className='w-full flex justify-center'>
         <form
         ref={form}
         onSubmit={sendEmail}
-        className='bg-card mx-4 p-4 md:p-8 w-96 flex flex-col gap-4 rounded text-pen'
+        className='bg-card mx-4 mb-4 p-4 md:p-8 w-96 flex flex-col gap-4 rounded text-pen'
       >
         <div>
           <input
