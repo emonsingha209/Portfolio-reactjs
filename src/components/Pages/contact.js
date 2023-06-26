@@ -3,15 +3,16 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
-  const serviceID = process.env.Service_ID;
-  const templateID = process.env.Template_ID;
-  const publicKey = process.env.Public_Key;
+  const serviceID = process.env.REACT_APP_Service_ID;
+  const templateID = process.env.REACT_APP_Template_ID;
+  const publicKey = process.env.REACT_APP_Public_Key;
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey).then(
       (result) => {
         console.log(result.text);
+        form.current.reset();
       },
       (error) => {
         console.log(error.text);
@@ -32,12 +33,12 @@ function Contact() {
         <form
         ref={form}
         onSubmit={sendEmail}
-        className='bg-card mx-4 p-4 md:p-8 w-96 flex flex-col gap-4 rounded'
+        className='bg-card mx-4 p-4 md:p-8 w-96 flex flex-col gap-4 rounded text-pen'
       >
         <div>
           <input
             type='text'
-            name='form_name'
+            name='from_name'
             placeholder='Name'
             className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
           />
@@ -52,7 +53,7 @@ function Contact() {
         </div>
         <div>
           <textarea
-            name='reply_to'
+            name='message'
             placeholder='Message...'
             className='p-2 w-full h-32 placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
           />
@@ -61,7 +62,7 @@ function Contact() {
           <input
             type='submit'
             value='Send'
-            className='bg-fullBg cursor-pointer w-full p-2 rounded-sm hover:bg-slate-950'
+            className='bg-fullBg cursor-pointer w-full p-2 rounded-sm hover:bg-slate-950 text-white'
           />
         </div>
       </form>
