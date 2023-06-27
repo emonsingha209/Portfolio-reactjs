@@ -7,6 +7,7 @@ import whatsapp from '../../images/whatsapp.png';
 import gmail from '../../images/gmail.png';
 import github from '../../images/github.png';
 import linkedin from '../../images/linkedin.png';
+import instagram from '../../images/instagram.png';
 
 function Intro() {
   return (
@@ -44,6 +45,15 @@ function Intro() {
         </div>
         <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
+            href='https://www.instagram.com/thounaojam_emon/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img src={instagram} alt='instagram' />
+          </a>
+        </div>
+        <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
+          <a
             href='https://wa.me/+8801743217209'
             target='_blank'
             rel='noreferrer'
@@ -57,7 +67,7 @@ function Intro() {
             target='_blank'
             rel='noreferrer'
           >
-            <img src={gmail} alt='gmail' className='bg-gray-200 rounded-md' />
+            <img src={gmail} alt='gmail' className='bg-gray-100 rounded-md' />
           </a>
         </div>
       </div>
