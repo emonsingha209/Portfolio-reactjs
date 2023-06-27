@@ -15,7 +15,7 @@ function Intro() {
       id='intro'
       className='flex flex-col-reverse md:flex-row items-center justify-around pt-24 md:pt-32 xl:pt-16 h-full w-full'
     >
-      <div className='grid grid-flow-col md:grid-flow-row w-2/3 md:w-16 gap-4 p-2'>
+      <div className='grid grid-flow-col md:grid-flow-row w-4/5 md:w-16 gap-4 p-2'>
         <div className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
           <a
             href='https://www.linkedin.com/in/emon-singha209/'
