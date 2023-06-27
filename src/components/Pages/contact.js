@@ -1,24 +1,82 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-  const form = useRef();
-  const serviceID = process.env.REACT_APP_Service_ID;
-  const templateID = process.env.REACT_APP_Template_ID;
-  const publicKey = process.env.REACT_APP_Public_Key;
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const [isEmailSent, setIsEmailSent] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [messageError, setMessageError] = useState('');
 
-    emailjs.sendForm(serviceID, templateID, form.current, publicKey).then(
-      (result) => {
-        console.log(result.text);
-        form.current.reset();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  };
+  const validateEmail = (email) => {
+    const emailCheck = /\S+@\S+\.\S+/;
+    return emailCheck.test(email);
+  }
+
+  async function sendEmail(e) {
+    e.preventDefault();
+    const form = e.target;
+    const nameInput = form.elements.from_name;
+    const emailInput = form.elements.reply_to;
+    const messageInput = form.elements.message;
+    let flag = 0;
+
+    if(!nameInput.value)
+    {
+      setNameError('Please enter your name');
+      flag = 1;
+    }
+    else
+    {
+      setNameError('');
+      flag = 0;
+    }
+
+    if(!emailInput.value)
+    {
+      setEmailError('Please enter your email');
+      flag = 1;
+    }
+    else if(!validateEmail(emailInput.value))
+    {
+      setEmailError('Please enter a valid email address');
+      flag = 1;
+    }
+    else
+    {
+      setEmailError('');
+      flag = 0;
+    }
+
+    if(!messageInput.value)
+    {
+      setMessageError('Message cannot be empty');
+      flag = 1;
+    }
+    else
+    {
+      setMessageError('');
+      flag = 0;
+    }
+
+    if(flag === 1)
+    {
+      setIsError(true);
+      return;
+    }
+
+    try {
+      const serviceID = process.env.REACT_APP_Service_ID;
+      const templateID = process.env.REACT_APP_Template_ID;
+      const publicKey = process.env.REACT_APP_Public_Key;
+      await emailjs.sendForm(serviceID, templateID, form, publicKey);
+      form.reset();
+      setIsEmailSent(true);
+      setIsError(false);
+    } catch (error) {
+      setIsError(true);
+    }
+  }
   return (
     <div
       id='contact'
@@ -29,13 +87,12 @@ function Contact() {
           <h3 className='text-3xl md:text-4xl font-bold'>
             Get in Touch with Me
           </h3>
-          <p className='text-lg md:text-xl px-2 italic text-gray-200'>
+          <p className='text-lg md:text-xl mt-2 px-2 italic text-gray-200'>
             Use the form below to send me a message or ask any questions
           </p>
         </div>
         <div className='w-full flex justify-center'>
           <form
-            ref={form}
             onSubmit={sendEmail}
             className='bg-card mx-4 mb-4 p-4 md:p-8 w-96 flex flex-col gap-4 rounded text-pen'
           >
@@ -46,6 +103,9 @@ function Contact() {
                 placeholder='Name'
                 className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
               />
+              {isError && nameError && <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
+                {nameError}
+              </p>}
             </div>
             <div>
               <input
@@ -54,6 +114,9 @@ function Contact() {
                 placeholder='Email'
                 className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
               />
+              {isError && emailError && <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
+                {emailError}
+              </p>}
             </div>
             <div>
               <textarea
@@ -61,6 +124,9 @@ function Contact() {
                 placeholder='Message...'
                 className='p-2 w-full h-32 placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
               />
+              {isError && messageError && <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700'>
+                {messageError}
+              </p>}
             </div>
             <div>
               <input
@@ -69,6 +135,16 @@ function Contact() {
                 className='bg-fullBg cursor-pointer w-full p-2 rounded-sm font-semibold text-lg hover:bg-slate-950 text-white'
               />
             </div>
+            {isEmailSent && (
+              <p className='text-center font-semibold text-lg p-2 rounded text-white bg-navColor'>
+                Message sent successfully &#10003;
+              </p>
+            )}
+            {isError && (
+              <p className='text-center font-semibold text-lg p-2 rounded text-white bg-red-600'>
+                Message sending failed. Please try again later.
+              </p>
+            )}
           </form>
         </div>
       </div>
