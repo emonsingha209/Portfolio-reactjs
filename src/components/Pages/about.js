@@ -12,7 +12,7 @@ import nestjs from '../../images/nestjs.png';
 
 function About() {
   return (
-    <div id='about' className='flex flex-col lg:flex-row md:pt-16 h-full'>
+    <div id='about' className='flex flex-col lg:flex-row pt-4 md:pt-16 h-full'>
       <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 lg:w-2/3'>
         <div className='text-3xl md:text-5xl font-bold'>
           <h1 className='text-yellow-400'>ABOUT ME</h1>

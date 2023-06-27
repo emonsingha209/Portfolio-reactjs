@@ -3,7 +3,7 @@ import ProjectCard from '../Card/projectCard';
 
 function Project() {
   return (
-    <div id='projects' className='mx-2 md:mx-4 md:pt-16 h-full'>
+    <div id='projects' className='mx-2 md:mx-4 pt-4 md:pt-16 h-full'>
       <div className='text-yellow-400 font-bold text-3xl md:text-5xl text-center md:mt-4 mb-2 md:mb-4'>
         <h2>PROJECTS</h2>
       </div>
