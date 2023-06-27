@@ -11,7 +11,7 @@ function Contact() {
   const validateEmail = (email) => {
     const emailCheck = /\S+@\S+\.\S+/;
     return emailCheck.test(email);
-  }
+  };
 
   async function sendEmail(e) {
     e.preventDefault();
@@ -21,46 +21,34 @@ function Contact() {
     const messageInput = form.elements.message;
     let flag = 0;
 
-    if(!nameInput.value)
-    {
+    if (!nameInput.value) {
       setNameError('Please enter your name');
       flag = 1;
-    }
-    else
-    {
+    } else {
       setNameError('');
       flag = 0;
     }
 
-    if(!emailInput.value)
-    {
+    if (!emailInput.value) {
       setEmailError('Please enter your email');
       flag = 1;
-    }
-    else if(!validateEmail(emailInput.value))
-    {
+    } else if (!validateEmail(emailInput.value)) {
       setEmailError('Please enter a valid email address');
       flag = 1;
-    }
-    else
-    {
+    } else {
       setEmailError('');
       flag = 0;
     }
 
-    if(!messageInput.value)
-    {
+    if (!messageInput.value) {
       setMessageError('Message cannot be empty');
       flag = 1;
-    }
-    else
-    {
+    } else {
       setMessageError('');
       flag = 0;
     }
 
-    if(flag === 1)
-    {
+    if (flag === 1) {
       setIsError(true);
       return;
     }
@@ -103,9 +91,11 @@ function Contact() {
                 placeholder='Name'
                 className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
               />
-              {isError && nameError && <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
-                {nameError}
-              </p>}
+              {isError && nameError && (
+                <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
+                  {nameError}
+                </p>
+              )}
             </div>
             <div>
               <input
@@ -114,9 +104,11 @@ function Contact() {
                 placeholder='Email'
                 className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
               />
-              {isError && emailError && <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
-                {emailError}
-              </p>}
+              {isError && emailError && (
+                <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
+                  {emailError}
+                </p>
+              )}
             </div>
             <div>
               <textarea
@@ -124,9 +116,11 @@ function Contact() {
                 placeholder='Message...'
                 className='p-2 w-full h-32 placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
               />
-              {isError && messageError && <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700'>
-                {messageError}
-              </p>}
+              {isError && messageError && (
+                <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700'>
+                  {messageError}
+                </p>
+              )}
             </div>
             <div>
               <input
