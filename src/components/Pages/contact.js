@@ -70,7 +70,7 @@ function Contact() {
       id='contact'
       className='w-full h-full flex items-center justify-center'
     >
-      <div className='mt-0 md:mt-16 h-auto w-full'>
+      <div className='pt-16 mb-2 h-auto w-full'>
         <div className='text-yellow-400 text-center mb-2 md:mb-4'>
           <h3 className='text-3xl md:text-4xl font-bold'>
             Get in Touch with Me
@@ -82,17 +82,17 @@ function Contact() {
         <div className='w-full flex justify-center'>
           <form
             onSubmit={sendEmail}
-            className='bg-card mx-4 mb-4 p-4 md:p-8 w-96 flex flex-col gap-4 rounded text-pen'
+            className='mx-4 mb-4 p-4 pt-0 w-96 flex flex-col gap-4 rounded text-pen'
           >
             <div>
               <input
                 type='text'
                 name='from_name'
                 placeholder='Name'
-                className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
+                className='p-2 w-full placeholder-pen border-2 border-gray-900 rounded-xl hover:border-blue-700 focus:border-blue-900 outline-none'
               />
               {isError && nameError && (
-                <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
+                <p className='text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700 mt-1.5'>
                   {nameError}
                 </p>
               )}
@@ -102,10 +102,10 @@ function Contact() {
                 type='email'
                 name='reply_to'
                 placeholder='Email'
-                className='p-2 w-full placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
+                className='p-2 w-full placeholder-pen border-2 border-gray-900 rounded-xl hover:border-blue-700 focus:border-blue-900 outline-none'
               />
               {isError && emailError && (
-                <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700 mt-1.5'>
+                <p className='text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700 mt-1.5'>
                   {emailError}
                 </p>
               )}
@@ -114,10 +114,10 @@ function Contact() {
               <textarea
                 name='message'
                 placeholder='Message...'
-                className='p-2 w-full h-32 placeholder-pen border-2 border-blue-600 hover:border-blue-700 focus:border-blue-900 outline-none'
+                className='p-2 w-full h-32 placeholder-pen border-2 border-gray-900 rounded-xl hover:border-blue-700 focus:border-blue-900 outline-none'
               />
               {isError && messageError && (
-                <p className='text-center font-medium p-1 bg-gray-200 rounded-sm text-red-700'>
+                <p className='text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700'>
                   {messageError}
                 </p>
               )}
@@ -126,16 +126,16 @@ function Contact() {
               <input
                 type='submit'
                 value='Send'
-                className='bg-fullBg cursor-pointer w-full p-2 rounded-sm font-semibold text-lg hover:bg-slate-950 text-white'
+                className='bg-green-700 cursor-pointer w-full p-2 rounded-lg font-semibold text-lg hover:bg-green-800 text-white'
               />
             </div>
             {isEmailSent && (
-              <p className='text-center font-semibold text-lg p-2 rounded text-white bg-navColor'>
+              <p className='text-center font-semibold text-lg p-2 rounded-xl text-white bg-navColor'>
                 Message sent successfully &#10003;
               </p>
             )}
             {isError && (
-              <p className='text-center font-semibold text-lg p-2 rounded text-white bg-red-600'>
+              <p className='text-center font-semibold text-lg p-2 rounded-xl text-white bg-red-600'>
                 Message sending failed. Please try again later.
               </p>
             )}

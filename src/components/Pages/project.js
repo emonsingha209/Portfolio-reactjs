@@ -3,11 +3,8 @@ import ProjectCard from '../Card/projectCard';
 
 function Project() {
   return (
-    <div
-      id='projects'
-      className='mx-0 md:mx-4 p-4 md:px-0 md:pt-20 md:pb-4 h-full'
-    >
-      <div className='text-yellow-400 font-bold text-3xl md:text-5xl text-center mb-2 md:mb-4'>
+    <div id='projects' className='mx-2 md:mx-4 md:pt-16 h-full'>
+      <div className='text-yellow-400 font-bold text-3xl md:text-5xl text-center md:mt-4 mb-2 md:mb-4'>
         <h2>PROJECTS</h2>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 content-stretch p-4 gap-4 h-auto'>

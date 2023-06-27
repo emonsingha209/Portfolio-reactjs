@@ -12,11 +12,8 @@ import nestjs from '../../images/nestjs.png';
 
 function About() {
   return (
-    <div
-      id='about'
-      className='flex flex-col lg:flex-row gap-0 mx-0 md:mx-4 md:pt-16 lg:pb-4 h-full'
-    >
-      <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 mt-4 lg:w-2/3'>
+    <div id='about' className='flex flex-col lg:flex-row md:pt-16 h-full'>
+      <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 lg:w-2/3'>
         <div className='text-3xl md:text-5xl font-bold'>
           <h1 className='text-yellow-400'>ABOUT ME</h1>
         </div>
@@ -33,33 +30,35 @@ function About() {
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-3 text-center text-base md:text-2xl font-bold text-yellow-500 m-4 lg:m-2 lg:w-1/3 h-full'>
-        <div>
-          <Skill skill='HTML' logo={html} />
-        </div>
-        <div>
-          <Skill skill='CSS' logo={css} />
-        </div>
-        <div>
-          <Skill skill='PHP' logo={php} />
-        </div>
-        <div>
-          <Skill skill='JavaScript' logo={js} />
-        </div>
-        <div>
-          <Skill skill='TypeScript' logo={ts} />
-        </div>
-        <div>
-          <Skill skill='Tailwind CSS' logo={tailwind} />
-        </div>
-        <div>
-          <Skill skill='ReactJS' logo={react} />
-        </div>
-        <div>
-          <Skill skill='NextJS' logo={nextjs} />
-        </div>
-        <div>
-          <Skill skill='NestJS' logo={nestjs} />
+      <div className='flex items-center lg:w-1/3 h-full'>
+        <div className='grid grid-cols-3 text-center text-base md:text-2xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
+          <div>
+            <Skill skill='HTML' logo={html} />
+          </div>
+          <div>
+            <Skill skill='CSS' logo={css} />
+          </div>
+          <div>
+            <Skill skill='PHP' logo={php} />
+          </div>
+          <div>
+            <Skill skill='JavaScript' logo={js} />
+          </div>
+          <div>
+            <Skill skill='TypeScript' logo={ts} />
+          </div>
+          <div>
+            <Skill skill='Tailwind CSS' logo={tailwind} />
+          </div>
+          <div>
+            <Skill skill='ReactJS' logo={react} />
+          </div>
+          <div>
+            <Skill skill='NextJS' logo={nextjs} />
+          </div>
+          <div>
+            <Skill skill='NestJS' logo={nestjs} />
+          </div>
         </div>
       </div>
     </div>
