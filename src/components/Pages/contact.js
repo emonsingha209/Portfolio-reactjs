@@ -50,7 +50,6 @@ function Contact() {
 
     if (flag === 1) {
       setIsError(true);
-      console.log('stoped');
       return;
     }
 
@@ -64,7 +63,6 @@ function Contact() {
       setIsError(false);
     } catch (error) {
       setIsError(true);
-      console.log(error);
     }
   }
   return (
