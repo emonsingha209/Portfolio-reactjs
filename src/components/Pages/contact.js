@@ -7,6 +7,7 @@ function Contact() {
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [messageError, setMessageError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const validateEmail = (email) => {
     const emailCheck = /\S+@\S+\.\S+/;
@@ -53,6 +54,8 @@ function Contact() {
       return;
     }
 
+    setIsLoading(true);
+
     try {
       const serviceID = process.env.REACT_APP_Service_ID;
       const templateID = process.env.REACT_APP_Template_ID;
@@ -63,6 +66,8 @@ function Contact() {
       setIsError(false);
     } catch (error) {
       setIsError(true);
+    } finally {
+      setIsLoading(false);
     }
   }
   return (
@@ -125,7 +130,8 @@ function Contact() {
             <div>
               <input
                 type='submit'
-                value='Send'
+                value={isLoading ? 'Sending...' : 'Send'}
+                disabled={isLoading}
                 className='bg-green-700 cursor-pointer w-full p-2 rounded-lg font-semibold text-lg hover:bg-green-800 text-white'
               />
             </div>
