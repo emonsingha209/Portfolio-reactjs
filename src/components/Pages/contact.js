@@ -72,7 +72,7 @@ function Contact() {
       id='contact'
       className='w-full h-full flex items-center justify-center'
     >
-      <div className='pt-16 mb-2 h-auto w-full'>
+      <div className='md:pt-16 mb-2 h-auto w-full'>
         <div className='text-yellow-400 text-center mb-2 md:mb-4'>
           <h3 className='text-3xl md:text-4xl font-bold'>
             Get in Touch with Me
