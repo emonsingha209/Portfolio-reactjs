@@ -20,36 +20,36 @@ function Contact() {
     const nameInput = form.elements.from_name;
     const emailInput = form.elements.reply_to;
     const messageInput = form.elements.message;
-    let flag = 0;
+    let flag = false;
 
     if (!nameInput.value) {
       setNameError('Please enter your name');
-      flag = 1;
+      flag = true;
     } else {
       setNameError('');
-      flag = 0;
+      flag = false;
     }
 
     if (!emailInput.value) {
       setEmailError('Please enter your email');
-      flag = 1;
+      flag = true;
     } else if (!validateEmail(emailInput.value)) {
       setEmailError('Please enter a valid email address');
-      flag = 1;
+      flag = true;
     } else {
       setEmailError('');
-      flag = 0;
+      flag = false;
     }
 
     if (!messageInput.value) {
       setMessageError('Message cannot be empty');
-      flag = 1;
+      flag = true;
     } else {
       setMessageError('');
-      flag = 0;
+      flag = false;
     }
 
-    if (flag === 1) {
+    if (flag) {
       setIsError(true);
       return;
     }
@@ -70,6 +70,12 @@ function Contact() {
       setIsLoading(false);
     }
   }
+  const inputClass =
+    'p-2 w-full placeholder-pen border-2 border-gray-900 rounded-xl hover:border-gray-800 focus:border-gray-950 outline-none';
+  const errorClass =
+    'text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700';
+  const confirmClass =
+    'text-center font-semibold text-lg p-2 rounded-xl text-white';
   return (
     <div
       id='contact'
@@ -94,12 +100,10 @@ function Contact() {
                 type='text'
                 name='from_name'
                 placeholder='Name'
-                className='p-2 w-full placeholder-pen border-2 border-gray-900 rounded-xl hover:border-blue-700 focus:border-blue-900 outline-none'
+                className={inputClass}
               />
               {isError && nameError && (
-                <p className='text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700 mt-1.5'>
-                  {nameError}
-                </p>
+                <p className={`${errorClass} mt-1.5`}>{nameError}</p>
               )}
             </div>
             <div>
@@ -107,24 +111,20 @@ function Contact() {
                 type='email'
                 name='reply_to'
                 placeholder='Email'
-                className='p-2 w-full placeholder-pen border-2 border-gray-900 rounded-xl hover:border-blue-700 focus:border-blue-900 outline-none'
+                className={inputClass}
               />
               {isError && emailError && (
-                <p className='text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700 mt-1.5'>
-                  {emailError}
-                </p>
+                <p className={`${errorClass} mt-1.5`}>{emailError}</p>
               )}
             </div>
             <div>
               <textarea
                 name='message'
                 placeholder='Message...'
-                className='p-2 w-full h-32 placeholder-pen border-2 border-gray-900 rounded-xl hover:border-blue-700 focus:border-blue-900 outline-none'
+                className={`${inputClass} h-32`}
               />
               {isError && messageError && (
-                <p className='text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700'>
-                  {messageError}
-                </p>
+                <p className={errorClass}>{messageError}</p>
               )}
             </div>
             <div>
@@ -136,12 +136,12 @@ function Contact() {
               />
             </div>
             {isEmailSent && (
-              <p className='text-center font-semibold text-lg p-2 rounded-xl text-white bg-navColor'>
+              <p className={`${confirmClass} bg-navColor`}>
                 Message sent successfully &#10003;
               </p>
             )}
             {isError && (
-              <p className='text-center font-semibold text-lg p-2 rounded-xl text-white bg-red-600'>
+              <p className={`${confirmClass} bg-red-600`}>
                 Message sending failed. Please try again later.
               </p>
             )}

@@ -6,8 +6,8 @@ import { Link } from 'react-scroll';
 function Header() {
   return (
     <div>
-      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gray-950 text-white p-4 flex justify-between z-9999'>
-        <div className='font-extrabold text-2xl cursor-pointer'>
+      <div className='fixed top-0 left-0 right-0 w-auto h-16 bg-gray-950 text-white flex justify-between'>
+        <div className='font-extrabold text-2xl cursor-pointer flex items-center justify-center ml-4'>
           <Link to='intro' smooth={true} duration={500}>
             <div className='flex gap-2'>
               <h1 className='text-blue-500'>EMON</h1>
@@ -18,7 +18,7 @@ function Header() {
         <div className='hidden md:flex'>
           <NavBar />
         </div>
-        <div className='md:hidden'>
+        <div className='md:hidden flex items-center justify mr-2'>
           <NavControl />
         </div>
       </div>

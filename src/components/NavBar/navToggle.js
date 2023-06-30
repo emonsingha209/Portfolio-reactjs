@@ -9,7 +9,7 @@ function NavControl() {
   };
 
   return (
-    <div>
+    <div className='flex items-center justify-center'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         className={'h-8 w-8'}
