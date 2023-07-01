@@ -1,6 +1,6 @@
 import React from 'react';
 import pic from '../../images/emon-singha.jpg';
-import cv from '../../files/Emon-Singha.pdf';
+import cv from '../../files/Emon_Singha.pdf';
 import LinkButton from '../Button/linkButton';
 import facebook from '../../images/facebook.png';
 import whatsapp from '../../images/whatsapp.png';
