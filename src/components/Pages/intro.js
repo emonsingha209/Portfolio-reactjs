@@ -8,71 +8,46 @@ import gmail from '../../images/gmail.png';
 import github from '../../images/github.png';
 import linkedin from '../../images/linkedin.png';
 import instagram from '../../images/instagram.png';
+import SocialLink from '../Card/socialLink';
 
 function Intro() {
-  const socialClass =
-    'transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150';
   const linkButtonClass = 'block h-full w-full p-3 rounded-lg';
   return (
     <div
       id='intro'
       className='flex flex-col-reverse md:flex-row items-center justify-around pt-24 md:pt-32 xl:pt-16 h-full w-full'
     >
-      <div className='grid grid-flow-col md:grid-flow-row w-4/5 md:w-16 gap-4 p-2'>
-        <div className={socialClass}>
-          <a
-            href='https://www.linkedin.com/in/emon-singha209/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img src={linkedin} alt='linkedin' />
-          </a>
-        </div>
-        <div className={socialClass}>
-          <a
-            href='https://github.com/emonsingha209'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img src={github} alt='github' className='rounded-md' />
-          </a>
-        </div>
-        <div className={socialClass}>
-          <a
-            href='https://www.facebook.com/thounaojam.emon'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img src={facebook} alt='facebook' />
-          </a>
-        </div>
-        <div className={socialClass}>
-          <a
-            href='https://www.instagram.com/thounaojam_emon/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img src={instagram} alt='instagram' />
-          </a>
-        </div>
-        <div className={socialClass}>
-          <a
-            href='https://wa.me/+8801743217209'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img src={whatsapp} alt='whatsapp' />
-          </a>
-        </div>
-        <div className={socialClass}>
-          <a
-            href='mailto:emonsingha209@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img src={gmail} alt='gmail' className='bg-gray-100 rounded-md' />
-          </a>
-        </div>
+      <div className='bg-fullBg rounded-md grid grid-flow-col md:grid-flow-row w-4/5 md:w-16 gap-4 p-3'>
+        <SocialLink
+          link='https://www.linkedin.com/in/emon-singha209/'
+          images={linkedin}
+          name='linkedin'
+        />
+        <SocialLink
+          link='https://github.com/emonsingha209'
+          images={github}
+          name='github'
+        />
+        <SocialLink
+          link='https://www.facebook.com/thounaojam.emon'
+          images={facebook}
+          name='facebook'
+        />
+        <SocialLink
+          link='https://www.instagram.com/thounaojam_emon/'
+          images={instagram}
+          name='instagram'
+        />
+        <SocialLink
+          link='https://wa.me/+8801743217209'
+          images={whatsapp}
+          name='whatsapp'
+        />
+        <SocialLink
+          link='mailto:emonsingha209@gmail.com'
+          images={gmail}
+          name='gmail'
+        />
       </div>
       <div className='flex flex-col items-center text-center m-8 md:text-left lg:m-20 max-w-2xl min-w-fit'>
         <div className='flex flex-col text-2xl'>

@@ -72,10 +72,9 @@ function Contact() {
   }
   const inputClass =
     'p-2 w-full placeholder-pen border-2 border-gray-900 rounded-xl hover:border-gray-800 focus:border-gray-950 outline-none';
-  const errorClass =
-    'text-center font-medium p-1 bg-gray-200 rounded-2xl text-red-700';
+  const errorClass = 'text-center font-medium text-white';
   const confirmClass =
-    'text-center font-semibold text-lg p-2 rounded-xl text-white';
+    'text-center font-semibold text-lg p-2 rounded-md text-white';
   return (
     <div
       id='contact'
