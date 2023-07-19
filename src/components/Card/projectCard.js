@@ -14,7 +14,7 @@ function ProjectCard(props) {
           <p>Languages: {props.languages}</p>
         </div>
       </div>
-      <div className='bg-gray-900 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg'>
+      <div className='bg-gray-900 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg rounded'>
         <button className='w-full'>
           <a
             href={props.projectLink}
