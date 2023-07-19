@@ -3,14 +3,14 @@ import React from 'react';
 function ProjectCard(props) {
   return (
     <div className='flex flex-col justify-between bg-gray-700 rounded p-2 h-full text-lg'>
-      <div className='grow p-2 font-newFont'>
-        <div className='pb-1 font-semibold text-xl'>
+      <div className='grow p-2'>
+        <div className='pb-1 font-bold text-xl'>
           <p>Project: {props.title}</p>
         </div>
-        <div className='pb-1'>
+        <div className='pb-1 leading-relaxed'>
           <p>{props.details}</p>
         </div>
-        <div>
+        <div className='mt-2'>
           <p>Languages: {props.languages}</p>
         </div>
       </div>
