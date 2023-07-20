@@ -17,7 +17,7 @@ function About() {
         <div className='text-3xl md:text-5xl font-bold'>
           <h1 className='text-yellow-400'>ABOUT ME</h1>
         </div>
-        <div className='text-center md:text-justify md:tracking-normal leading-relaxed font-poppins px-0 md:px-8'>
+        <div className='text-left md:text-justify md:tracking-normal leading-relaxed font-poppins px-0 md:px-8'>
           <p>
             Hi, I'm Emon Singha, a web developer with expertise in HTML, CSS,
             JavaScript, and PHP. Additionally, I'm proficient in frameworks such
@@ -30,7 +30,10 @@ function About() {
           </p>
         </div>
       </div>
-      <div className='flex items-center lg:w-1/3 h-full'>
+      <div className='flex flex-col items-center lg:w-1/3 h-full md:mr-4'>
+        <div className='flex items-center mt-6 text-white text-2xl md:text-4xl font-bold'>
+          <h2>MY STACKS</h2>
+        </div>
         <div className='grid grid-cols-3 text-center text-base md:text-2xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
           <div>
             <Skill skill='HTML' logo={html} />
