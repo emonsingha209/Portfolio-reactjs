@@ -4,7 +4,7 @@ import cv from '../../files/Emon_Singha.pdf';
 import LinkButton from '../Button/linkButton';
 import facebook from '../../images/facebook.png';
 import whatsapp from '../../images/whatsapp.png';
-import gmail from '../../images/gmail.png';
+import gmail from '../../images/gmail.jpg';
 import github from '../../images/github.png';
 import linkedin from '../../images/linkedin.png';
 import instagram from '../../images/instagram.png';
