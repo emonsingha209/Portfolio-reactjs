@@ -129,7 +129,7 @@ function Contact() {
             <div>
               <input
                 type='submit'
-                value={isLoading ? 'Sending...' : 'Send'}
+                value={isLoading ? 'Sending...' : 'Send Message'}
                 disabled={isLoading}
                 className='bg-green-700 cursor-pointer w-full p-2 rounded-lg font-semibold text-lg hover:bg-green-800 text-white'
               />
