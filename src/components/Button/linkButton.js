@@ -4,7 +4,7 @@ function LinkButton(props) {
     <div>
       <div
         className='bg-yellow-500 w-fit rounded-lg ring-2 ring-yellow-500 ring-offset-2 ring-offset-gray-800 
-            hover:bg-yellow-600 hover:ring-yellow-600 text-white'
+            hover:bg-yellow-600 hover:ring-yellow-600'
       >
         <button className='cursor-pointer'>{props.Link}</button>
       </div>
