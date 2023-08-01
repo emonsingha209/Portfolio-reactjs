@@ -6,7 +6,7 @@ function SocialLink(props) {
   return (
     <div className={socialClass}>
       <a href={props.link} target='_blank' rel='noreferrer'>
-        <img src={props.images} alt={props.name} className='rounded-md' />
+        <img src={props.images} alt={props.name} width={100} height={100} loading='lazy' className='rounded-md' />
       </a>
     </div>
   );
