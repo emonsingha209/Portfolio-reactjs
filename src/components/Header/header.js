@@ -11,7 +11,7 @@ function Header() {
         <div className='font-extrabold text-2xl cursor-pointer flex items-center justify-center ml-4 md:ml-6'>
           <Link to='intro' smooth={true} duration={500}>
             <div className='flex gap-2'>
-              <img className='w-8 h-8 rounded-full' src={logo} alt='logo'/>
+              <img className='w-6 md:w-8 h-6 md:h-8 rounded-full' src={logo} alt='logo'/>
               <h1 className='text-blue-500'>EMON</h1>
               <h1 className='text-yellow-500'>SINGHA</h1>
             </div>
