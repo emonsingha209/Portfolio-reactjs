@@ -8,46 +8,55 @@ import gmail from '../images/gmail.jpg';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
 import instagram from '../images/instagram.png';
-import SocialLink from '../components/Card/socialLink';
 
 function Intro() {
   const linkButtonClass = 'block h-full w-full p-3 rounded-lg';
+
+  const socialLinks = [
+    {
+      link: 'https://www.linkedin.com/in/emon-singha209/',
+      image: linkedin,
+      name: 'linkedin',
+    },
+    {
+      link: 'https://github.com/emonsingha209',
+      image: github,
+      name: 'github',
+    },
+    {
+      link: 'https://www.facebook.com/thounaojam.emon',
+      image: facebook,
+      name: 'facebook',
+    },
+    {
+      link: 'https://www.instagram.com/thounaojam_emon/',
+      image: instagram,
+      name: 'instagram',
+    },
+    {
+      link: 'https://wa.me/+8801743217209',
+      image: whatsapp,
+      name: 'whatsapp',
+    },
+    {
+      link: 'mailto:emonsingha209@gmail.com',
+      image: gmail,
+      name: 'gmail',
+    },
+  ];
   return (
     <div
       id='intro'
       className='flex flex-col-reverse md:flex-row items-center justify-around pt-24 md:pt-32 xl:pt-16 h-full w-full'
     >
       <div className='bg-fullBg rounded-md grid grid-flow-col md:grid-flow-row w-4/5 md:w-16 gap-4 p-3'>
-        <SocialLink
-          link='https://www.linkedin.com/in/emon-singha209/'
-          images={linkedin}
-          name='linkedin'
-        />
-        <SocialLink
-          link='https://github.com/emonsingha209'
-          images={github}
-          name='github'
-        />
-        <SocialLink
-          link='https://www.facebook.com/thounaojam.emon'
-          images={facebook}
-          name='facebook'
-        />
-        <SocialLink
-          link='https://www.instagram.com/thounaojam_emon/'
-          images={instagram}
-          name='instagram'
-        />
-        <SocialLink
-          link='https://wa.me/+8801743217209'
-          images={whatsapp}
-          name='whatsapp'
-        />
-        <SocialLink
-          link='mailto:emonsingha209@gmail.com'
-          images={gmail}
-          name='gmail'
-        />
+        {socialLinks.map((socialLink, index) => (
+          <div key={index} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
+            <a href={socialLink.link} target='_blank' rel='noreferrer'>
+              <img src={socialLink.image} alt={socialLink.name} width={100} height={100} loading='lazy' className='rounded-md' />
+            </a>
+          </div>
+        ))}
       </div>
       <div className='flex flex-col items-center text-center m-8 md:text-left lg:m-20 max-w-2xl min-w-fit'>
         <div className='flex flex-col text-2xl'>

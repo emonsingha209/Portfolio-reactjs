@@ -1,5 +1,4 @@
 import React from 'react';
-import Skill from '../components/SkillLogo/skill';
 import html from '../images/html-5.png';
 import css from '../images/css-3.png';
 import js from '../images/js.png';
@@ -11,6 +10,17 @@ import nextjs from '../images/nextjs.png';
 import nestjs from '../images/nestjs.png';
 
 function About() {
+  const skillsData = [
+    { skill: 'HTML', logo: html },
+    { skill: 'CSS', logo: css },
+    { skill: 'PHP', logo: php },
+    { skill: 'JavaScript', logo: js },
+    { skill: 'TypeScript', logo: ts },
+    { skill: 'Tailwind CSS', logo: tailwind },
+    { skill: 'ReactJS', logo: react },
+    { skill: 'NextJS', logo: nextjs },
+    { skill: 'NestJS', logo: nestjs },
+  ];
   return (
     <div id='about' className='flex flex-col lg:flex-row pt-4 md:pt-16 h-full'>
       <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 lg:w-2/3'>
@@ -31,37 +41,22 @@ function About() {
         </div>
       </div>
       <div className='flex flex-col items-center lg:w-1/3 h-full md:mr-4'>
-        <div className='flex items-center mt-6 text-white text-3xl md:text-4xl font-bold'>
+        <div className='flex items-center mt-8 text-white text-3xl md:text-4xl font-bold'>
           <h2>MY STACKS</h2>
         </div>
         <div className='grid grid-cols-3 text-center text-base md:text-2xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
-          <div>
-            <Skill skill='HTML' logo={html} />
-          </div>
-          <div>
-            <Skill skill='CSS' logo={css} />
-          </div>
-          <div>
-            <Skill skill='PHP' logo={php} />
-          </div>
-          <div>
-            <Skill skill='JavaScript' logo={js} />
-          </div>
-          <div>
-            <Skill skill='TypeScript' logo={ts} />
-          </div>
-          <div>
-            <Skill skill='Tailwind CSS' logo={tailwind} />
-          </div>
-          <div>
-            <Skill skill='ReactJS' logo={react} />
-          </div>
-          <div>
-            <Skill skill='NextJS' logo={nextjs} />
-          </div>
-          <div>
-            <Skill skill='NestJS' logo={nestjs} />
-          </div>
+          {skillsData.map((skill, index) => (
+            <div key={index}>
+              <div>
+                <div className='p-8 md:p-10 pb-3 md:pb-2'>
+                  <img src={skill.logo} alt={skill.skill} loading='lazy' />
+                </div>
+                <div>
+                  <p>{skill.skill}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
