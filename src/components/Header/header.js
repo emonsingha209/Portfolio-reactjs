@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../NavBar/navbar';
 import NavControl from '../NavBar/navToggle';
 import { Link } from 'react-scroll';
-import logo from '../../images/emonsinghaLogo.png';
+import logo from '../../assets/images/emonsinghaLogo.png';
 
 function Header() {
   return (

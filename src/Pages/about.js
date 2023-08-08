@@ -1,25 +1,31 @@
 import React from 'react';
-import html from '../images/html-5.png';
-import css from '../images/css-3.png';
-import js from '../images/js.png';
-import php from '../images/php.png';
-import react from '../images/react.png';
-import ts from '../images/typescript.png';
-import tailwind from '../images/Tailwind_CSS.png';
-import nextjs from '../images/nextjs.png';
-import nestjs from '../images/nestjs.png';
+import html from '../assets/images/html-5.png';
+import css from '../assets/images/css-3.png';
+import js from '../assets/images/js.png';
+import php from '../assets/images/php.png';
+import react from '../assets/images/react.png';
+import ts from '../assets/images/typescript.png';
+import tailwind from '../assets/images/Tailwind_CSS.png';
+import nextjs from '../assets/images/nextjs.png';
+import nestjs from '../assets/images/nestjs.png';
+import mysql from '../assets/images/mysql.png';
+import pg from '../assets/images/pg.png';
+import asp from '../assets/images/asp.png';
 
 function About() {
   const skillsData = [
     { skill: 'HTML', logo: html },
     { skill: 'CSS', logo: css },
-    { skill: 'PHP', logo: php },
     { skill: 'JavaScript', logo: js },
+    { skill: 'PHP', logo: php },
     { skill: 'TypeScript', logo: ts },
-    { skill: 'Tailwind CSS', logo: tailwind },
     { skill: 'ReactJS', logo: react },
     { skill: 'NextJS', logo: nextjs },
     { skill: 'NestJS', logo: nestjs },
+    { skill: 'ASP.NET', logo: asp },
+    { skill: 'PostgreSQL', logo: pg },
+    { skill: 'MySql', logo: mysql },
+    { skill: 'TailwindCSS', logo: tailwind },
   ];
   return (
     <div id='about' className='flex flex-col lg:flex-row pt-4 md:pt-16 h-full'>
@@ -44,14 +50,14 @@ function About() {
         <div className='flex items-center mt-8 text-white text-3xl md:text-4xl font-bold'>
           <h2>MY STACKS</h2>
         </div>
-        <div className='grid grid-cols-3 text-center text-base md:text-2xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
+        <div className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-4 text-center text-base md:text-xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
           {skillsData.map((skill, index) => (
             <div key={index}>
               <div>
-                <div className='p-8 md:p-10 pb-3 md:pb-2'>
+                <div className='p-8 md:p-6 pb-3 md:pb-2'>
                   <img src={skill.logo} alt={skill.skill} loading='lazy' />
                 </div>
-                <div>
+                <div className='mb-4'>
                   <p>{skill.skill}</p>
                 </div>
               </div>

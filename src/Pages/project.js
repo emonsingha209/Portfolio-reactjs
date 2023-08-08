@@ -53,7 +53,7 @@ function Project() {
                 <p>{project.details}</p>
               </div>
               <div className='mt-2'>
-                <p>Languages: {project.languages}</p>
+                <p>Languages & Tech: {project.languages}</p>
               </div>
             </div>
             <div className='bg-gray-900 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg rounded'>
