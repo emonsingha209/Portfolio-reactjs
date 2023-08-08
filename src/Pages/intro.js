@@ -1,14 +1,14 @@
 import React from 'react';
-import pic from '../../images/emon-singha.jpg';
-import cv from '../../files/Emon_Singha.pdf';
-import LinkButton from '../Button/linkButton';
-import facebook from '../../images/facebook.png';
-import whatsapp from '../../images/whatsapp.png';
-import gmail from '../../images/gmail.jpg';
-import github from '../../images/github.png';
-import linkedin from '../../images/linkedin.png';
-import instagram from '../../images/instagram.png';
-import SocialLink from '../Card/socialLink';
+import pic from '../images/emon-singha.jpg';
+import cv from '../files/Emon_Singha.pdf';
+import LinkButton from '../components/Button/linkButton';
+import facebook from '../images/facebook.png';
+import whatsapp from '../images/whatsapp.png';
+import gmail from '../images/gmail.jpg';
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.png';
+import instagram from '../images/instagram.png';
+import SocialLink from '../components/Card/socialLink';
 
 function Intro() {
   const linkButtonClass = 'block h-full w-full p-3 rounded-lg';

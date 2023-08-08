@@ -1,8 +1,8 @@
 import React from 'react';
-import Intro from './Pages/intro';
-import About from './Pages/about';
-import Project from './Pages/project';
-import Contact from './Pages/contact';
+import Intro from './intro';
+import About from './about';
+import Project from './project';
+import Contact from './contact';
 
 function HomePage() {
   return (

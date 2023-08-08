@@ -1,14 +1,14 @@
 import React from 'react';
-import Skill from '../SkillLogo/skill';
-import html from '../../images/html-5.png';
-import css from '../../images/css-3.png';
-import js from '../../images/js.png';
-import php from '../../images/php.png';
-import react from '../../images/react.png';
-import ts from '../../images/typescript.png';
-import tailwind from '../../images/Tailwind_CSS.png';
-import nextjs from '../../images/nextjs.png';
-import nestjs from '../../images/nestjs.png';
+import Skill from '../components/SkillLogo/skill';
+import html from '../images/html-5.png';
+import css from '../images/css-3.png';
+import js from '../images/js.png';
+import php from '../images/php.png';
+import react from '../images/react.png';
+import ts from '../images/typescript.png';
+import tailwind from '../images/Tailwind_CSS.png';
+import nextjs from '../images/nextjs.png';
+import nestjs from '../images/nestjs.png';
 
 function About() {
   return (
