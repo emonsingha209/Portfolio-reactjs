@@ -51,9 +51,19 @@ function Intro() {
     >
       <div className='bg-fullBg rounded-md grid grid-flow-col md:grid-flow-row m:w-16 gap-4 p-3'>
         {socialLinks.map((socialLink, index) => (
-          <div key={index} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
+          <div
+            key={index}
+            className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'
+          >
             <a href={socialLink.link} target='_blank' rel='noreferrer'>
-              <img src={socialLink.image} alt={socialLink.name} width={100} height={100} loading='lazy' className='rounded-md w-10' />
+              <img
+                src={socialLink.image}
+                alt={socialLink.name}
+                width={100}
+                height={100}
+                loading='lazy'
+                className='rounded-md w-10'
+              />
             </a>
           </div>
         ))}

@@ -1,32 +1,7 @@
 import React from 'react';
-import html from '../assets/images/html-5.png';
-import css from '../assets/images/css-3.png';
-import js from '../assets/images/js.png';
-import php from '../assets/images/php.png';
-import react from '../assets/images/react.png';
-import ts from '../assets/images/typescript.png';
-import tailwind from '../assets/images/Tailwind_CSS.png';
-import nextjs from '../assets/images/nextjs.png';
-import nestjs from '../assets/images/nestjs.png';
-import mysql from '../assets/images/mysql.png';
-import pg from '../assets/images/pg.png';
-import asp from '../assets/images/asp.png';
+import { skillsData } from '../assets/data/skill';
 
 function About() {
-  const skillsData = [
-    { skill: 'HTML', logo: html },
-    { skill: 'CSS', logo: css },
-    { skill: 'JavaScript', logo: js },
-    { skill: 'PHP', logo: php },
-    { skill: 'TypeScript', logo: ts },
-    { skill: 'ReactJS', logo: react },
-    { skill: 'NextJS', logo: nextjs },
-    { skill: 'NestJS', logo: nestjs },
-    { skill: 'ASP.NET', logo: asp },
-    { skill: 'PostgreSQL', logo: pg },
-    { skill: 'MySql', logo: mysql },
-    { skill: 'TailwindCSS', logo: tailwind },
-  ];
   return (
     <div id='about' className='flex flex-col lg:flex-row pt-4 md:pt-16 h-full'>
       <div className='flex flex-col items-center justify-center text-xl md:text-2xl gap-4 p-4 lg:w-2/3'>
@@ -55,7 +30,12 @@ function About() {
             <div key={index}>
               <div>
                 <div className='p-8 md:p-6 pb-3 md:pb-2'>
-                  <img src={skill.logo} alt={skill.skill} loading='lazy' className='w-16' />
+                  <img
+                    src={skill.logo}
+                    alt={skill.skill}
+                    loading='lazy'
+                    className='w-16'
+                  />
                 </div>
                 <div className='mb-4'>
                   <p>{skill.skill}</p>

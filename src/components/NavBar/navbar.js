@@ -6,8 +6,10 @@ function NavBar() {
     smooth: true,
     duration: 500,
   };
-  const linkClass = 'h-full px-2 flex items-center justify-center cursor-pointer';
-  const liClass = 'hover:text-yellow-400 h-full flex items-center justify-center';
+  const linkClass =
+    'h-full px-2 flex items-center justify-center cursor-pointer';
+  const liClass =
+    'hover:text-yellow-400 h-full flex items-center justify-center';
   return (
     <div>
       <nav>
