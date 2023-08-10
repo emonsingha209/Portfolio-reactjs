@@ -49,11 +49,11 @@ function Intro() {
       id='intro'
       className='flex flex-col-reverse md:flex-row items-center justify-around pt-24 md:pt-32 xl:pt-16 h-full w-full'
     >
-      <div className='bg-fullBg rounded-md grid grid-flow-col md:grid-flow-row w-4/5 md:w-16 gap-4 p-3'>
+      <div className='bg-fullBg rounded-md grid grid-flow-col md:grid-flow-row m:w-16 gap-4 p-3'>
         {socialLinks.map((socialLink, index) => (
           <div key={index} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'>
             <a href={socialLink.link} target='_blank' rel='noreferrer'>
-              <img src={socialLink.image} alt={socialLink.name} width={100} height={100} loading='lazy' className='rounded-md' />
+              <img src={socialLink.image} alt={socialLink.name} width={100} height={100} loading='lazy' className='rounded-md w-10' />
             </a>
           </div>
         ))}
