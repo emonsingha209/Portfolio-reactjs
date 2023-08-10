@@ -7,11 +7,12 @@ export const projects = [
     projectLink: 'https://github.com/emonsingha209/SHARPENERS',
   },
   {
-    title: 'OpenGL London Tower Bridge - A Digital Remake',
+    title: 'Crack Cipher',
     details:
-      'An OpenGL project about London iconic Tower Bridge, meticulously recreated with meticulous attention to detail, capturing its majesty and architectural finesse. This visually stunning experience offers viewers a captivating glimpse into the beauty of this historical landmark.',
-    languages: 'OpenGL',
-    projectLink: 'https://github.com/emonsingha209/London-Tower-Bridge--Opengl',
+      'Introducing the Encryption and Decryption Website, seamlessly merging cryptography and web development. Explore classical ciphers like Caesar, Playfair, and Vigenère via a user-friendly interface. Prioritizing security and user experience, the platform offers an in-depth dive into each cipher mechanics, immersing users in the captivating world of encryption techniques. Embark on a journey to decode historical ciphers within this engaging project.',
+    languages: 'NextJs',
+    liveDemoLink: 'https://crackcipher.netlify.app/',
+    projectLink: 'https://github.com/emonsingha209/Crack-Cipher',
   },
   {
     title: 'Nutrition and Workout System (Backend)',
@@ -26,5 +27,13 @@ export const projects = [
       'The Health Consultant Application is a Java-based tool that empowers users to input symptoms and receive personalized health recommendations. It employs evidence-based practices to predict potential diseases based on symptoms. Additionally, users can conveniently schedule appointments with doctors, ensuring timely and accurate medical attention to cater to their unique needs and preferences.',
     languages: 'Java',
     projectLink: 'https://github.com/emonsingha209/Health_Consultant',
+  },
+  {
+    title: 'OpenGL London Tower Bridge - A Digital Remake',
+    details:
+      'An OpenGL project about London iconic Tower Bridge, meticulously recreated with meticulous attention to detail, capturing its majesty and architectural finesse. This visually stunning experience offers viewers a captivating glimpse into the beauty of this historical landmark.',
+    languages: 'OpenGL',
+    liveDemoLink: 'https://drive.google.com/file/d/17pnlM2e0nUVA7bSfI87fT4gGDV7UaS5d/view?usp=sharing',
+    projectLink: 'https://github.com/emonsingha209/London-Tower-Bridge--Opengl',
   },
 ];

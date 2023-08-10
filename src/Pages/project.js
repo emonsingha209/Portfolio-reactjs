@@ -24,17 +24,42 @@ function Project() {
                 <p>Languages & Tech: {project.languages}</p>
               </div>
             </div>
-            <div className='bg-gray-900 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg rounded'>
-              <button className='w-full'>
-                <a
-                  href={project.projectLink}
-                  target='_blank'
-                  rel='noreferrer'
-                  className='block w-full h-full p-2'
-                >
-                  Source Code
-                </a>
-              </button>
+            <div className='flex gap-2'>
+              {project.liveDemoLink ? (
+                <div className='bg-gray-900 w-1/2 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg rounded'>
+                  <button className='w-full'>
+                    <a
+                      href={project.liveDemoLink}
+                      target='_blank'
+                      rel='noreferrer'
+                      className='block w-full h-full p-2'
+                    >
+                      Live Demo
+                    </a>
+                  </button>
+                </div>
+              ) : (
+                <div className='bg-gray-900 w-1/2 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg rounded'>
+                  <button
+                    className='w-full h-full p-2 cursor-not-allowed'
+                    disabled
+                  >
+                    No Live Demo Available
+                  </button>
+                </div>
+              )}
+              <div className='bg-gray-900 w-1/2 text-center cursor-pointer hover:bg-gray-950 font-semibold text-lg rounded flex items-center justify-center'>
+                <button className='w-full'>
+                  <a
+                    href={project.projectLink}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='block w-full h-full p-2'
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         ))}
