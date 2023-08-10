@@ -50,7 +50,7 @@ function About() {
         <div className='flex items-center mt-8 text-white text-3xl md:text-4xl font-bold'>
           <h2>MY STACKS</h2>
         </div>
-        <div className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-4 text-center text-base md:text-xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
+        <div className='grid grid-cols-3 md:grid-cols-6 lg:grid-cols-4 text-center text-base md:text-xl font-bold text-yellow-500 m-4 mt-0 lg:m-2 lg:w-full h-fit'>
           {skillsData.map((skill, index) => (
             <div key={index}>
               <div>
