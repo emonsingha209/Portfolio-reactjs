@@ -55,7 +55,7 @@ function About() {
             <div key={index}>
               <div>
                 <div className='p-8 md:p-6 pb-3 md:pb-2'>
-                  <img src={skill.logo} alt={skill.skill} loading='lazy' />
+                  <img src={skill.logo} alt={skill.skill} loading='lazy' className='w-16 h-16' />
                 </div>
                 <div className='mb-4'>
                   <p>{skill.skill}</p>
