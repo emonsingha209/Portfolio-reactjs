@@ -22,6 +22,6 @@ export const skillsData = [
   { skill: 'NestJS', logo: nestjs },
   { skill: 'ASP.NET', logo: asp },
   { skill: 'PostgreSQL', logo: pg },
-  { skill: 'MySql', logo: mysql },
+  { skill: 'MySQL', logo: mysql },
   { skill: 'TailwindCSS', logo: tailwind },
 ];
