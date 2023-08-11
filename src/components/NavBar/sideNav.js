@@ -8,7 +8,7 @@ function sideNav() {
     offset: -50,
   };
   const linkClass = 'h-full w-full flex items-center justify-center';
-  const liClass = 'w-36 h-14 hover:text-yellow-400';
+  const liClass = 'w-44 h-14 hover:text-yellow-400';
   return (
     <div>
       <nav>
