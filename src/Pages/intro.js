@@ -40,10 +40,10 @@ function Intro() {
         </div>
         <div className='flex gap-6 md:gap-8 pt-8 md:pt-12 text-center text-pen font-medium'>
           <div>
-            <LinkButton link={linkedinLink.link} text={linkedinLink.name} />
+            <LinkButton link={linkedinLink.link} text='Learn More' />
           </div>
           <div>
-            <LinkButton link={emailLink.link} text={emailLink.name} />
+            <LinkButton link={emailLink.link} text='Email Me' />
           </div>
         </div>
         <div className='flex pt-6 text-pen text-center font-medium md:hidden'>
