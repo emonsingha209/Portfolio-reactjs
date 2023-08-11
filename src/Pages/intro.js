@@ -1,49 +1,12 @@
 import React from 'react';
 import pic from '../assets/images/emon-singha.jpg';
-import cv from '../assets/files/Emon_Singha.pdf';
 import LinkButton from '../components/Button/linkButton';
-import facebook from '../assets/images/facebook.png';
-import whatsapp from '../assets/images/whatsapp.png';
-import gmail from '../assets/images/gmail.jpg';
-import github from '../assets/images/github.png';
-import linkedin from '../assets/images/linkedin.png';
-import instagram from '../assets/images/instagram.png';
+import { socialLinks } from '../assets/data/social';
 
 function Intro() {
-  const linkButtonClass = 'block h-full w-full p-3 rounded-lg';
+  const linkedinLink = socialLinks.find((link) => link.name === 'linkedin');
+  const emailLink = socialLinks.find((link) => link.name === 'gmail');
 
-  const socialLinks = [
-    {
-      link: 'https://www.linkedin.com/in/emon-singha209/',
-      image: linkedin,
-      name: 'linkedin',
-    },
-    {
-      link: 'https://github.com/emonsingha209',
-      image: github,
-      name: 'github',
-    },
-    {
-      link: 'https://www.facebook.com/thounaojam.emon',
-      image: facebook,
-      name: 'facebook',
-    },
-    {
-      link: 'https://www.instagram.com/thounaojam_emon/',
-      image: instagram,
-      name: 'instagram',
-    },
-    {
-      link: 'https://wa.me/+8801743217209',
-      image: whatsapp,
-      name: 'whatsapp',
-    },
-    {
-      link: 'mailto:emonsingha209@gmail.com',
-      image: gmail,
-      name: 'gmail',
-    },
-  ];
   return (
     <div
       id='intro'
@@ -75,32 +38,19 @@ function Intro() {
           </h1>
           <p className='mt-3 md:mt-4'>Full Stack Developer</p>
         </div>
-        <div className='flex gap-8 md:gap-12 pt-8 md:pt-12 text-pen font-medium'>
+        <div className='flex gap-6 md:gap-8 pt-8 md:pt-12 text-center text-pen font-medium'>
           <div>
-            <LinkButton
-              Link={
-                <a
-                  href='https://www.linkedin.com/in/emon-singha209/'
-                  target='_blank'
-                  rel='noreferrer'
-                  className={linkButtonClass}
-                >
-                  Learn More
-                </a>
-              }
-            />
+            <LinkButton link={linkedinLink.link} text={linkedinLink.name} />
           </div>
           <div>
+            <LinkButton link={emailLink.link} text={emailLink.name} />
+          </div>
+        </div>
+        <div className='flex pt-6 text-pen text-center font-medium md:hidden'>
+          <div>
             <LinkButton
-              Link={
-                <a
-                  href={cv}
-                  className={linkButtonClass}
-                  download='Emon-Singha.pdf'
-                >
-                  Curriculum Vitae
-                </a>
-              }
+              link='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
+              text='Resume'
             />
           </div>
         </div>

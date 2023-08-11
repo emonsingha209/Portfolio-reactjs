@@ -33,7 +33,8 @@ export const projects = [
     details:
       'An OpenGL project about London iconic Tower Bridge, meticulously recreated with meticulous attention to detail, capturing its majesty and architectural finesse. This visually stunning experience offers viewers a captivating glimpse into the beauty of this historical landmark.',
     languages: 'OpenGL',
-    liveDemoLink: 'https://drive.google.com/file/d/17pnlM2e0nUVA7bSfI87fT4gGDV7UaS5d/view?usp=sharing',
+    liveDemoLink:
+      'https://drive.google.com/file/d/17pnlM2e0nUVA7bSfI87fT4gGDV7UaS5d/view?usp=sharing',
     projectLink: 'https://github.com/emonsingha209/London-Tower-Bridge--Opengl',
   },
 ];

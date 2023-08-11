@@ -7,7 +7,7 @@ function App() {
     <div>
       <Header />
       <HomePage />
-      <script type="application/ld+json">
+      <script type='application/ld+json'>
         {`
           {
             "@context": "http://schema.org",

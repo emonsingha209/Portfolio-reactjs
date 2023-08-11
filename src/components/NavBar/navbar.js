@@ -30,6 +30,16 @@ function NavBar() {
             </Link>
           </li>
           <li className={liClass}>
+            <a
+              href='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
+              target='_blank'
+              rel='noreferrer'
+              className={linkClass}
+            >
+              Resume
+            </a>
+          </li>
+          <li className={liClass}>
             <Link to='contact' {...scroll} className={linkClass}>
               Contact
             </Link>
