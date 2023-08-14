@@ -33,6 +33,8 @@ function About() {
                   <img
                     src={skill.logo}
                     alt={skill.skill}
+                    width={150}
+                    height={150}
                     loading='lazy'
                     className='w-16 h-auto'
                   />

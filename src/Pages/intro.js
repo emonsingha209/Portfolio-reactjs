@@ -59,6 +59,8 @@ function Intro() {
         <img
           className='h-64 w-64 mobile:h-auto mobile:w-auto tablet:h-80 tablet:w-80 xl:h-120 xl:w-120 bg-sky-400 border-4 border-gray-700 rounded-full border-solid'
           src={pic}
+          width={500}
+          height={500}
           alt='Emon'
         />
       </div>
