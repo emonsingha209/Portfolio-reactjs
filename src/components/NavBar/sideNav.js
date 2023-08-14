@@ -1,15 +1,6 @@
 import React from 'react';
 
-function scrollToSection(event, sectionId) {
-  event.preventDefault();
-  const section = document.getElementById(sectionId);
-  if (section) {
-    window.scrollTo({
-      behavior: 'smooth',
-      top: section.offsetTop - 50,
-    });
-  }
-}
+import scrollToSection from '../Scroll/scrollFunction';
 
 function sideNav() {
   const liClass = 'w-44 h-14 hover:text-yellow-400';

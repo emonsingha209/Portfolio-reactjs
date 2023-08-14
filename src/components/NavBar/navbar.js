@@ -1,15 +1,6 @@
 import React from 'react';
 
-function scrollToSection(event, sectionId) {
-  event.preventDefault();
-  const section = document.getElementById(sectionId);
-  if (section) {
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth',
-    });
-  }
-}
+import scrollToSection from '../Scroll/scrollFunction';
 
 function NavBar() {
   const liClass = 'hover:text-yellow-400 h-full flex items-center justify-center';
