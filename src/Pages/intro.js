@@ -11,11 +11,11 @@ function Intro() {
   const [isDesktop, setIsDesktop] = useState(false);
 
   const handleWindowSizeChange = () => {
-    setIsDesktop(window.innerWidth >= 768); 
+    setIsDesktop(window.innerWidth >= 768);
   };
 
   useEffect(() => {
-    handleWindowSizeChange(); 
+    handleWindowSizeChange();
     window.addEventListener('resize', handleWindowSizeChange);
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange);
@@ -57,10 +57,16 @@ function Intro() {
         </div>
         <div className='flex flex-row md:flex-col lg:flex-row gap-6 md:gap-8 pt-8 md:pt-12 text-center text-pen font-medium'>
           <div>
-            <LinkButton link={linkedinLink.link} text='Learn More on LinkedIn' />
+            <LinkButton
+              link={linkedinLink.link}
+              text='Learn More on LinkedIn'
+            />
           </div>
           <div>
-            <LinkButton link={emailLink.link} text='Send Email For Any Question' />
+            <LinkButton
+              link={emailLink.link}
+              text='Send Email For Any Question'
+            />
           </div>
         </div>
         <div className='flex pt-6 text-pen text-center font-medium md:hidden'>
