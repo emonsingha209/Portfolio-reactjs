@@ -11,7 +11,7 @@ function LinkButton(props) {
           href={props.link}
           target='_blank'
           rel='noreferrer'
-          className='block h-full w-32 p-3 rounded-lg'
+          className='block h-full w-fit p-3 rounded-lg'
         >
           {props.text}
         </a>
