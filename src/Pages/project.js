@@ -7,14 +7,14 @@ function Project() {
       <div className='text-yellow-400 font-bold text-3xl md:text-5xl text-center md:mt-4 mb-2 md:mb-4'>
         <h2>PROJECTS</h2>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 content-stretch p-4 gap-8 h-auto font-poppins'>
+      <div className='grid grid-cols-1 md:grid-cols-2 content-stretch p-4 gap-8 h-auto font-light'>
         {projects.map((project, index) => (
           <div
             key={index}
             className='flex flex-col justify-between bg-gray-700 rounded p-2 h-full text-lg'
           >
             <div className='grow p-2'>
-              <div className='pb-1 font-bold text-xl'>
+              <div className='pb-1 font-medium text-xl'>
                 <p>Project: {project.title}</p>
               </div>
               <div className='pb-1 leading-relaxed'>
