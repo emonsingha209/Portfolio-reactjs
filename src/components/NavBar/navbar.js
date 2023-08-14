@@ -1,18 +1,18 @@
 import React from 'react';
 
-function scrollToTarget(targetId) {
-  const target = document.getElementById(targetId);
-  if (target) {
+function scrollToSection(event, sectionId) {
+  event.preventDefault();
+  const section = document.getElementById(sectionId);
+  if (section) {
     window.scrollTo({
-      top: target.offsetTop,
+      top: section.offsetTop,
       behavior: 'smooth',
     });
   }
 }
 
 function NavBar() {
-  const liClass =
-    'hover:text-yellow-400 h-full flex items-center justify-center';
+  const liClass = 'hover:text-yellow-400 h-full flex items-center justify-center';
 
   return (
     <div>
@@ -21,11 +21,8 @@ function NavBar() {
           <li className={liClass}>
             <a
               href='#intro'
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToTarget('intro');
-              }}
-              className='h-full px-2 flex items-center justify-center'
+              onClick={(event) => scrollToSection(event, 'intro')}
+              className='h-full flex xl:px-1 items-center justify-center'
             >
               Home
             </a>
@@ -33,11 +30,8 @@ function NavBar() {
           <li className={liClass}>
             <a
               href='#about'
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToTarget('about');
-              }}
-              className='h-full px-2 flex items-center justify-center'
+              onClick={(event) => scrollToSection(event, 'about')}
+              className='h-full flex xl:px-1 items-center justify-center'
             >
               About
             </a>
@@ -45,11 +39,8 @@ function NavBar() {
           <li className={liClass}>
             <a
               href='#projects'
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToTarget('projects');
-              }}
-              className='h-full px-2 flex items-center justify-center'
+              onClick={(event) => scrollToSection(event, 'projects')}
+              className='h-full flex xl:px-1 items-center justify-center'
             >
               Projects
             </a>
@@ -59,7 +50,7 @@ function NavBar() {
               href='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
               target='_blank'
               rel='noreferrer'
-              className='h-full px-2 flex items-center justify-center cursor-pointer'
+              className='h-full flex xl:px-1 items-center justify-center'
             >
               Resume
             </a>
@@ -67,11 +58,8 @@ function NavBar() {
           <li className={liClass}>
             <a
               href='#contact'
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToTarget('contact');
-              }}
-              className='h-full px-2 flex items-center justify-center'
+              onClick={(event) => scrollToSection(event, 'contact')}
+              className='h-full flex xl:px-1 items-center justify-center'
             >
               Contact
             </a>

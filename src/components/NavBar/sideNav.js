@@ -1,47 +1,68 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+
+function scrollToSection(event, sectionId) {
+  event.preventDefault();
+  const section = document.getElementById(sectionId);
+  if (section) {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: section.offsetTop - 50,
+    });
+  }
+}
 
 function sideNav() {
-  const scroll = {
-    smooth: true,
-    duration: 500,
-    offset: -50,
-  };
-  const linkClass = 'h-full w-full flex items-center justify-center';
   const liClass = 'w-44 h-14 hover:text-yellow-400';
+
   return (
     <div>
       <nav>
         <ul className='absolute bg-gray-800 right-0 top-16 h-screen text-center flex flex-col text-2xl divide-y divide-sky-400 font-thin cursor-pointer font-serif'>
           <li className={liClass}>
-            <Link to='intro' {...scroll} className={linkClass}>
+            <a
+              href='#intro'
+              onClick={(event) => scrollToSection(event, 'intro')}
+              className='h-full w-full flex items-center justify-center'
+            >
               Home
-            </Link>
+            </a>
           </li>
           <li className={liClass}>
-            <Link to='about' {...scroll} className={linkClass}>
+            <a
+              href='#about'
+              onClick={(event) => scrollToSection(event, 'about')}
+              className='h-full w-full flex items-center justify-center'
+            >
               About
-            </Link>
+            </a>
           </li>
           <li className={liClass}>
-            <Link to='projects' {...scroll} className={linkClass}>
+            <a
+              href='#projects'
+              onClick={(event) => scrollToSection(event, 'projects')}
+              className='h-full w-full flex items-center justify-center'
+            >
               Projects
-            </Link>
+            </a>
           </li>
           <li className={liClass}>
             <a
               href='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
               target='_blank'
               rel='noreferrer'
-              className={linkClass}
+              className='h-full w-full flex items-center justify-center'
             >
               Resume
             </a>
           </li>
           <li className={liClass}>
-            <Link to='contact' {...scroll} className={linkClass}>
+            <a
+              href='#contact'
+              onClick={(event) => scrollToSection(event, 'contact')}
+              className='h-full w-full flex items-center justify-center'
+            >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
