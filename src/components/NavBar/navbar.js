@@ -1,48 +1,80 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+
+function scrollToTarget(targetId) {
+  const target = document.getElementById(targetId);
+  if (target) {
+    window.scrollTo({
+      top: target.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+}
 
 function NavBar() {
-  const scroll = {
-    smooth: true,
-    duration: 500,
-  };
-  const linkClass =
-    'h-full px-2 flex items-center justify-center cursor-pointer';
   const liClass =
     'hover:text-yellow-400 h-full flex items-center justify-center';
+
   return (
     <div>
       <nav>
         <ul className='md:flex text-2xl gap-4 mr-4 font-thin font-serif h-16'>
           <li className={liClass}>
-            <Link to='intro' {...scroll} className={linkClass}>
+            <a
+              href='#intro'
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToTarget('intro');
+              }}
+              className='h-full px-2 flex items-center justify-center'
+            >
               Home
-            </Link>
+            </a>
           </li>
           <li className={liClass}>
-            <Link to='about' {...scroll} className={linkClass}>
+            <a
+              href='#about'
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToTarget('about');
+              }}
+              className='h-full px-2 flex items-center justify-center'
+            >
               About
-            </Link>
+            </a>
           </li>
           <li className={liClass}>
-            <Link to='projects' {...scroll} className={linkClass}>
+            <a
+              href='#projects'
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToTarget('projects');
+              }}
+              className='h-full px-2 flex items-center justify-center'
+            >
               Projects
-            </Link>
+            </a>
           </li>
           <li className={liClass}>
             <a
               href='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
               target='_blank'
               rel='noreferrer'
-              className={linkClass}
+              className='h-full px-2 flex items-center justify-center cursor-pointer'
             >
               Resume
             </a>
           </li>
           <li className={liClass}>
-            <Link to='contact' {...scroll} className={linkClass}>
+            <a
+              href='#contact'
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToTarget('contact');
+              }}
+              className='h-full px-2 flex items-center justify-center'
+            >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
