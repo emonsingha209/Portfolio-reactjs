@@ -34,7 +34,7 @@ function About() {
                     src={skill.logo}
                     alt={skill.skill}
                     loading='lazy'
-                    className='w-16'
+                    className='w-16 h-auto'
                   />
                 </div>
                 <div className='mb-4'>
