@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import pic from '../assets/images/Others/emon-singha.webp';
+import pic2x from '../assets/images/Others/emon-singha2x.webp';
 import LinkButton from '../components/Button/linkButton';
 import { socialLinks } from '../assets/data/social';
 
 function Intro() {
   const linkedinLink = socialLinks.find((link) => link.name === 'linkedin');
   const emailLink = socialLinks.find((link) => link.name === 'gmail');
+
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  const handleWindowSizeChange = () => {
+    setIsDesktop(window.innerWidth >= 768); 
+  };
+
+  useEffect(() => {
+    handleWindowSizeChange(); 
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
+  const imageSrc = isDesktop ? pic2x : pic;
 
   return (
     <div
@@ -58,7 +75,7 @@ function Intro() {
       <div className='flex items-center mx-4 md:p-4 lg:p-0 xl:p-12'>
         <img
           className='bg-sky-400 border-4 border-gray-700 rounded-full border-solid'
-          src={pic}
+          src={imageSrc}
           width={500}
           height={500}
           alt='Emon'
