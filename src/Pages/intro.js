@@ -67,7 +67,7 @@ function Intro() {
           <div>
             <LinkButton
               link='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
-              text='Resume'
+              text='View My Resume'
             />
           </div>
         </div>
