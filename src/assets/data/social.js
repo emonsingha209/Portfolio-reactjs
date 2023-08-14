@@ -1,9 +1,9 @@
-import facebook from '../images/Social/facebook.png';
-import whatsapp from '../images/Social/whatsapp.png';
-import gmail from '../images/Social/gmail.png';
-import github from '../images/Social/github.png';
-import linkedin from '../images/Social/linkedin.png';
-import instagram from '../images/Social/instagram.png';
+import facebook from '../images/Social/facebook.webp';
+import whatsapp from '../images/Social/whatsapp.webp';
+import gmail from '../images/Social/gmail.webp';
+import github from '../images/Social/github.webp';
+import linkedin from '../images/Social/linkedin.webp';
+import instagram from '../images/Social/instagram.webp';
 
 export const socialLinks = [
   {

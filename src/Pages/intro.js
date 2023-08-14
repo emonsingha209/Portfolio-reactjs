@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../assets/images/Others/emon-singha.jpg';
+import pic from '../assets/images/Others/emon-singha.webp';
 import LinkButton from '../components/Button/linkButton';
 import { socialLinks } from '../assets/data/social';
 
