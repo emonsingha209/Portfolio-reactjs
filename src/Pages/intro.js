@@ -39,8 +39,8 @@ function Intro() {
               <img
                 src={socialLink.image}
                 alt={socialLink.name}
-                width={100}
-                height={100}
+                width={64}
+                height={64}
                 loading='lazy'
                 className='rounded-md w-10 h-auto'
               />
@@ -82,8 +82,8 @@ function Intro() {
         <img
           className='bg-sky-400 border-4 border-gray-700 rounded-full border-solid'
           src={imageSrc}
-          width={500}
-          height={500}
+          width={isDesktop ? 1024 : 512}
+          height={isDesktop ? 1024 : 512}
           alt='Emon'
         />
       </div>
