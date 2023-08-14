@@ -55,7 +55,7 @@ function Intro() {
           </h1>
           <p className='mt-3 md:mt-4'>Full Stack Developer</p>
         </div>
-        <div className='flex gap-6 md:gap-8 pt-8 md:pt-12 text-center text-pen font-medium'>
+        <div className='flex flex-row md:flex-col lg:flex-row gap-6 md:gap-8 pt-8 md:pt-12 text-center text-pen font-medium'>
           <div>
             <LinkButton link={linkedinLink.link} text='Learn More on LinkedIn' />
           </div>
