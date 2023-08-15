@@ -42,7 +42,7 @@ function Intro() {
                 width={64}
                 height={64}
                 loading='lazy'
-                className='rounded-md w-10 h-auto'
+                className='rounded-md w-8 md:w-16 h-auto'
               />
             </a>
           </div>
