@@ -44,7 +44,7 @@ function Project() {
               ) : (
                 <div className='w-1/2 text-lg font-semibold text-center bg-gray-900 rounded cursor-pointer hover:bg-gray-950'>
                   <button
-                    className='w-full h-full p-2 cursor-not-allowed opacity-70'
+                    className='w-full h-full p-2 text-gray-300 cursor-not-allowed'
                     disabled
                   >
                     No Live Demo Available

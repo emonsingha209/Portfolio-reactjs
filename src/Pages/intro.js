@@ -27,13 +27,13 @@ function Intro() {
   return (
     <div
       id='intro'
-      className='flex flex-col-reverse md:flex-row items-center justify-around pt-24 md:pt-32 xl:pt-16 h-full w-full'
+      className='flex flex-col-reverse items-center justify-around w-full h-full pt-24 md:flex-row md:pt-32 xl:pt-16'
     >
-      <div className='bg-fullBg rounded-md grid grid-flow-col md:grid-flow-row m:w-16 gap-4 p-3'>
+      <div className='grid grid-flow-col gap-4 p-3 rounded-md bg-fullBg md:grid-flow-row m:w-16'>
         {socialLinks.map((socialLink, index) => (
           <div
             key={index}
-            className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150'
+            className='transition duration-150 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'
           >
             <a href={socialLink.link} target='_blank' rel='noreferrer'>
               <img
@@ -42,20 +42,20 @@ function Intro() {
                 width={64}
                 height={64}
                 loading='lazy'
-                className='rounded-md w-8 md:w-16 h-auto'
+                className='w-8 h-auto rounded-md md:w-auto'
               />
             </a>
           </div>
         ))}
       </div>
-      <div className='flex flex-col items-center text-center m-8 md:text-left lg:m-20 max-w-2xl min-w-fit'>
+      <div className='flex flex-col items-center max-w-2xl m-8 text-center md:text-left lg:m-20 min-w-fit'>
         <div className='flex flex-col text-2xl'>
           <h1 className='text-3xl lg:text-5xl xl:text-6xl'>
             Hi! I am Emon Singha
           </h1>
           <p className='mt-3 md:mt-4'>Full Stack Developer</p>
         </div>
-        <div className='flex flex-row md:flex-col lg:flex-row gap-6 md:gap-8 pt-8 md:pt-12 text-center text-pen font-medium'>
+        <div className='flex flex-row gap-6 pt-8 font-medium text-center md:flex-col lg:flex-row md:gap-8 md:pt-12 text-pen'>
           <div>
             <LinkButton
               link={linkedinLink.link}
@@ -69,7 +69,7 @@ function Intro() {
             />
           </div>
         </div>
-        <div className='flex pt-6 text-pen text-center font-medium md:hidden'>
+        <div className='flex pt-6 font-medium text-center text-pen md:hidden'>
           <div>
             <LinkButton
               link='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
@@ -80,7 +80,7 @@ function Intro() {
       </div>
       <div className='flex items-center mx-4 md:p-4 lg:p-0 xl:p-12'>
         <img
-          className='bg-sky-400 border-4 border-gray-700 rounded-full border-solid'
+          className='border-4 border-gray-700 border-solid rounded-full bg-sky-400'
           src={imageSrc}
           width={isDesktop ? 1024 : 512}
           height={isDesktop ? 1024 : 512}

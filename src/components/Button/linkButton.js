@@ -4,14 +4,13 @@ function LinkButton(props) {
   return (
     <div>
       <div
-        className='bg-navColor w-fit rounded-lg ring-2 ring-navColor ring-offset-2 ring-offset-gray-800 
-            hover:bg-blue-600 hover:ring-blue-600 text-white'
+        className='text-white rounded-lg bg-navColor w-fit ring-2 ring-navColor ring-offset-2 ring-offset-gray-800 hover:bg-blue-600 hover:ring-blue-600'
       >
         <a
           href={props.link}
           target='_blank'
           rel='noreferrer'
-          className='block h-full w-fit p-3 rounded-lg'
+          className='block w-40 h-full px-3 py-2 rounded-lg'
         >
           {props.text}
         </a>
