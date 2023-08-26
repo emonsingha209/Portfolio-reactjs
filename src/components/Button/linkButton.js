@@ -10,7 +10,7 @@ function LinkButton(props) {
           href={props.link}
           target='_blank'
           rel='noreferrer'
-          className='block w-40 h-full px-3 py-2 rounded-lg'
+          className='block w-40 h-full p-3 rounded-lg'
         >
           {props.text}
         </a>
