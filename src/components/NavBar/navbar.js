@@ -1,6 +1,6 @@
 import React from 'react';
-
 import scrollToSection from '../Scroll/scrollFunction';
+import { CV } from '../../assets/data/cv';
 
 function NavBar() {
   const liClass = 'hover:text-yellow-400 h-full flex items-center justify-center';
@@ -38,7 +38,7 @@ function NavBar() {
           </li>
           <li className={liClass}>
             <a
-              href='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
+              href={CV}
               target='_blank'
               rel='noreferrer'
               className='h-full flex xl:px-1 items-center justify-center'

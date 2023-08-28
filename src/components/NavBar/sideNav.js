@@ -1,6 +1,6 @@
 import React from 'react';
-
 import scrollToSection from '../Scroll/scrollFunction';
+import { CV } from '../../assets/data/cv';
 
 function sideNav() {
   const liClass = 'w-44 h-14 hover:text-yellow-400';
@@ -38,7 +38,7 @@ function sideNav() {
           </li>
           <li className={liClass}>
             <a
-              href='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
+              href={CV}
               target='_blank'
               rel='noreferrer'
               className='h-full w-full flex items-center justify-center'

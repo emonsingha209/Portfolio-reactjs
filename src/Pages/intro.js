@@ -3,6 +3,7 @@ import pic from '../assets/images/Others/emon-singha.webp';
 import pic2x from '../assets/images/Others/emon-singha2x.webp';
 import LinkButton from '../components/Button/linkButton';
 import { socialLinks } from '../assets/data/social';
+import { CV } from '../assets/data/cv';
 
 function Intro() {
   const linkedinLink = socialLinks.find((link) => link.name === 'linkedin');
@@ -72,7 +73,7 @@ function Intro() {
         <div className='flex pt-6 font-medium text-center text-pen md:hidden'>
           <div>
             <LinkButton
-              link='https://drive.google.com/file/d/1AZgGObB3rHB0mzv0AdV0BrbeSgGTygTp/view?usp=sharing'
+              link={CV}
               text='View My Resume'
             />
           </div>
