@@ -134,8 +134,8 @@ function Project() {
         overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
       >
         {selectedProject && (
-          <div className="w-full h-full p-4 bg-blue-400 rounded-lg">
-            <h3 className="mb-4 text-2xl">{selectedProject}</h3>
+          <div className="w-full h-full p-4 mx-2 bg-blue-400 rounded-lg">
+            <h3 className="mb-4 text-2xl text-center">{selectedProject}</h3>
             {DualLinks(selectedProject)}
           </div>
         )}
