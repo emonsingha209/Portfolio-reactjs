@@ -1,13 +1,13 @@
-import React from 'react';
-import Header from './components/Header/header';
-import HomePage from './Pages/homepage';
+import React from "react";
+import Header from "./components/Header/header";
+import HomePage from "./Pages/homepage";
 
 function App() {
   return (
     <div>
       <Header />
       <HomePage />
-      <script type='application/ld+json'>
+      <script type="application/ld+json">
         {`
           {
             "@context": "http://schema.org",
