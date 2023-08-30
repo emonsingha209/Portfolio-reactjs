@@ -51,7 +51,7 @@ function Project() {
   };
 
   return (
-    <div id="projects" className="h-full pt-8 mx-2 md:mx-4 md:pt-16">
+    <div id="projects" className="h-full pt-8 mx-2 md:pt-16">
       <div className="mb-2 text-3xl font-bold text-center text-yellow-400 md:text-5xl md:mt-4 md:mb-4">
         <h2>PROJECTS</h2>
       </div>
@@ -61,10 +61,7 @@ function Project() {
             key={index}
             className="flex flex-col justify-between h-full p-2 pt-1 text-base bg-gray-700 rounded"
           >
-            <div className="p-2 grow">
-              <div className="text-xl font-bold text-yellow-400">
-                <p>Project: {project.title}</p>
-              </div>
+            <div className="p-2 pt-0 grow">
               <div className="w-full h-auto my-4">
                 <img
                   src={project.picture}
@@ -72,6 +69,9 @@ function Project() {
                   className="object-cover w-full h-full bg-gray-200 rounded-lg"
                   loading="lazy"
                 />
+              </div>
+              <div className="text-xl font-bold text-yellow-400 mb-2">
+                <p>Project:- {project.title}</p>
               </div>
               <div className="pb-1 subpixel-antialiased leading-relaxed">
                 <p>{project.details}</p>
