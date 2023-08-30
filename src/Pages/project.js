@@ -65,8 +65,13 @@ function Project() {
               <div className="text-xl font-bold text-yellow-400">
                 <p>Project: {project.title}</p>
               </div>
-              <div className='w-full h-auto my-4'>
-                <img src={project.picture} alt={project.title} className='object-cover w-full h-full bg-gray-200 rounded-lg' /> 
+              <div className="w-full h-auto my-4">
+                <img
+                  src={project.picture}
+                  alt={project.title}
+                  className="object-cover w-full h-full bg-gray-200 rounded-lg"
+                  loading="lazy"
+                />
               </div>
               <div className="pb-1 subpixel-antialiased leading-relaxed">
                 <p>{project.details}</p>
