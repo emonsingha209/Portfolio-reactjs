@@ -24,7 +24,7 @@ function Project() {
 
     if (isAvailable) {
       return (
-        <div className="flex gap-2 text-gray-200">
+        <div className="flex gap-4 text-gray-200">
           <div className="flex justify-center w-1/2 text-lg font-semibold text-center bg-gray-900 rounded cursor-pointer hover:bg-gray-950">
             <a
               href={isAvailable.frontendLink}
@@ -65,9 +65,9 @@ function Project() {
               <div className="text-xl font-bold text-yellow-400">
                 <p>Project: {project.title}</p>
               </div>
-              {/* <div className='w-full my-4 h-80'>
-                <img src='https://geekflare.com/wp-content/uploads/2023/03/img-placeholder.png' alt='ye' className='object-cover w-full h-full rounded' /> 
-              </div> */}
+              <div className='w-full h-auto my-4'>
+                <img src={project.picture} alt={project.title} className='object-cover w-full h-full bg-gray-200 rounded-lg' /> 
+              </div>
               <div className="pb-1 subpixel-antialiased leading-relaxed">
                 <p>{project.details}</p>
               </div>
@@ -131,10 +131,10 @@ function Project() {
         onRequestClose={CloseModal}
         contentLabel="Links"
         className="bg-gray-800"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center px-4"
       >
         {selectedProject && (
-          <div className="w-full h-full p-4 mx-2 bg-blue-400 rounded-lg">
+          <div className="w-full h-full p-4 bg-blue-400 rounded-lg">
             <h3 className="mb-4 text-2xl text-center">{selectedProject}</h3>
             {DualLinks(selectedProject)}
           </div>
