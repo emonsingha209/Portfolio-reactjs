@@ -78,7 +78,7 @@ function Intro() {
       </div>
       <div className="flex items-center mx-4 md:p-4 lg:p-0 xl:p-12">
         <img
-          className="border-4 border-gray-700 border-solid rounded-full bg-sky-400"
+          className="border-4 h-auto w-auto border-gray-700 border-solid rounded-full bg-sky-400"
           src={imageSrc}
           width={isDesktop ? 1024 : 512}
           height={isDesktop ? 1024 : 512}
