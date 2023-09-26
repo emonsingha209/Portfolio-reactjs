@@ -91,15 +91,16 @@ function Contact() {
         <div className="top-0 flex items-center justify-center w-full">
           <div className="flex flex-col gap-2 mb-4 font-mono text-lg md:mb-0 md:gap-6 lg:gap-12 md:text-xl lg:text-3xl">
             <div>
-              <FontAwesomeIcon icon={faPhone} /> <span>+880 1743217209</span>
+              <FontAwesomeIcon icon={faPhone} />
+              <span> +880 1743217209</span>
             </div>
             <div>
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
-              <span>emonsingha209@gmail.com</span>
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span> emonsingha209@gmail.com</span>
             </div>
             <div>
-              <FontAwesomeIcon icon={faMapMarker} />{" "}
-              <span>Mridhabari,Kuril,Dhaka-1229</span>
+              <FontAwesomeIcon icon={faMapMarker} />
+              <span> Mridhabari,Kuril,Dhaka-1229</span>
             </div>
           </div>
         </div>

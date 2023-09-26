@@ -30,7 +30,7 @@ function Intro() {
       id="intro"
       className="flex flex-col-reverse items-center justify-around w-full h-full pt-24 md:flex-row md:pt-32 xl:pt-16"
     >
-      <div className="grid grid-flow-col gap-4 p-3 rounded-md bg-fullBg md:grid-flow-row m:w-16">
+      <div className="grid grid-flow-col gap-4 p-3 rounded-md bg-fullBg md:grid-flow-row m:w-auto">
         {socialLinks.map((socialLink, index) => (
           <div
             key={index}
@@ -40,10 +40,7 @@ function Intro() {
               <img
                 src={socialLink.image}
                 alt={socialLink.name}
-                width={64}
-                height={64}
-                loading="lazy"
-                className="w-8 h-auto rounded-md md:w-auto"
+                className="w-8 h-auto rounded-md md:w-16"
               />
             </a>
           </div>
@@ -78,7 +75,7 @@ function Intro() {
       </div>
       <div className="flex items-center mx-4 md:p-4 lg:p-0 xl:p-12">
         <img
-          className="border-4 h-auto w-auto border-gray-700 border-solid rounded-full bg-sky-400"
+          className="w-auto h-auto border-4 border-gray-700 border-solid rounded-full bg-sky-400"
           src={imageSrc}
           width={isDesktop ? 1024 : 512}
           height={isDesktop ? 1024 : 512}
