@@ -1,2 +1,2 @@
 export const CV =
-  "https://drive.google.com/file/d/123wkFmo3Eeiwq1afApJvpb9CXq2CmAJD/view?usp=sharing";
+  "https://drive.google.com/file/d/1BOJU9fjnFra_u5z-4TiUnQo-C1Kkcyrh/view?usp=sharing";
