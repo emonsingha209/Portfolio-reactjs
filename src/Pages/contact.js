@@ -1,12 +1,12 @@
-import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Loading from "../assets/svg/Rolling.svg";
 import {
-  faPhone,
   faEnvelope,
   faMapMarker,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
+import Loading from "../assets/svg/Rolling.svg";
 
 function Contact() {
   const [isEmailSent, setIsEmailSent] = useState(false);
@@ -67,6 +67,7 @@ function Contact() {
       const serviceID = process.env.REACT_APP_Service_ID;
       const templateID = process.env.REACT_APP_Template_ID;
       const publicKey = process.env.REACT_APP_Public_Key;
+      console.log(form);
       await emailjs.sendForm(serviceID, templateID, form, publicKey);
       form.reset();
       setIsEmailSent(true);

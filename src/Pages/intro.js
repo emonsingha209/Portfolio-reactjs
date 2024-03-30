@@ -51,7 +51,7 @@ function Intro() {
           <h1 className="text-3xl lg:text-5xl xl:text-6xl">
             Hi! I am Emon Singha
           </h1>
-          <p className="mt-3 md:mt-4">Frontend Developer Developer</p>
+          <p className="mt-3 md:mt-4">Frontend Developer</p>
         </div>
         <div className="flex flex-row gap-6 pt-8 font-medium text-center md:flex-col lg:flex-row md:gap-8 md:pt-12 text-pen">
           <div>
